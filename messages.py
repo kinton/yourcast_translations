@@ -14,6 +14,8 @@ def get_language(lang_code):
 		return "pt-BR"  # Бразильский вариант португальского языка
 	elif lang_code == "es":
 		return "es"
+	elif lang_code == "de":
+		return "de"
 	elif lang_code == "he":
 		return "he"
 	else:
@@ -584,6 +586,10 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Error! Try again later or contact the developer"
+		},
+		"de": {
+			"ro_msg": "Ein Fehler ist aufgetreten! Versuche es später erneut oder "
+			"setze Dich mit dem Entwickler in Verbindung!"
 		}
 	},
 	"parsingError": {
@@ -603,7 +609,7 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Fehler beim Abrufen der Podcast-Informationen."
-			" Bitte entschuldige."
+			" Bitte entschuldige!"
 		},
 		"he": {
 			"ro_msg": "מצטערים, אירעו שגיאות בקבלת המידע על הפודקאסט."
@@ -645,7 +651,7 @@ messages = {
 			"ro_msg": "Algo salió mal, intente nuevamente más tarde"
 		},
 		"de": {
-			"ro_msg": "Es ist ein Fehler aufgetreten. Versuchen Sie es später erneut"
+			"ro_msg": "Es ist ein Fehler aufgetreten. Versuche es später erneut!"
 		},
 		"he": {
 			"ro_msg": "משהו השתבש, נסה שוב מאוחר יותר"
@@ -988,10 +994,10 @@ messages = {
 		},
 		"de": {
 			"ro_msg": emojiCodes.get('gear') + "*Bitrate auswählen*\n\n"
-			"Zum Beispiel, wenn die Bitrate ist"
-			" 64 kbit/s, dann dauert eine 10-minütige Aufnahme etwa 4,6 Megabyte."
-			"\nZur gleichen Zeit, wenn die Bitrate zweimal höher ist, dann die "
-			"Dateigröße verdoppelt sich.\nDieser Parameter wirkt sich auf die "
+			"Wenn die Bitrate beispielsweise"
+			" 64 kbit/s beträgt, dann belegt eine 10-minütige Aufnahme etwa 4,6 Megabyte."
+			"\nAnalog verdoppelt sich bei doppelter Bitrate auch die "
+			"Dateigröße.\nDieser Parameter wirkt sich auf die "
 			"Aufnahmequalität aus.\n\nAktuelle Bitrate:"
 		}
 	},
@@ -1043,7 +1049,7 @@ messages = {
 			"ro_msg": emojiCodes.get('crown') + " " + "Le puede gustar"
 		},
 		"de": {
-			"ro_msg": emojiCodes.get('crown') + " " + "Vorschläge"
+			"ro_msg": emojiCodes.get('crown') + " " + "Empfehlungen"
 		},
 		"he": {
 			"ro_msg": emojiCodes.get('crown') + " " + "אולי תאהב את זה"
@@ -1492,7 +1498,7 @@ messages = {
 			" einer bestimmten Seite springen.\n\n"
 			"Der Bot verschickt neue Folgen automatisch, aber Du kannst auch von Hand"
 			" überprüfen, ob neue Einträge verfügbar sind, indem Du im /menu "
-			"„Aktualisieren” wählst. Der „Vorschläge”-Button lädt Dich ein, neue"
+			"„Aktualisieren” wählst. Der „Empfehlungen”-Button lädt Dich ein, neue"
 			" Podcasts kennenzulernen.\n\n"
 			"Darüber hinaus bietet der Bot eine Reihe an Befehlen, welche alle mit"
 			" / beginnen, /menu beispielsweise. Gib / ins Nachrichtenfeld ein, um eine"
@@ -1521,19 +1527,22 @@ messages = {
 		"ru": {
 			"ro_msg": "Да"
 		},
-		"en": {"ro_msg": "Yes"}
+		"en": {"ro_msg": "Yes"},
+		"de": {"ro_msg": "Ja"}
 	},
 	"no": {
 		"ru": {
 			"ro_msg": "Нет"
 		},
-		"en": {"ro_msg": "No"}
+		"en": {"ro_msg": "No"},
+		"de": {"ro_msg": "Nein"}
 	},
 	"unlimited": {
 		"ru": {
 			"ro_msg": "Неограниченно"
 		},
-		"en": {"ro_msg": "Unlimited"}
+		"en": {"ro_msg": "Unlimited"},
+		"de": {"ro_msg": "Unbegrenzt"}
 	},
 	"disable": {
 		"ru": {
@@ -1541,6 +1550,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Disable"
+		},
+		"de": {
+			"ro_msg": "Deaktivieren"
 		}
 	},
 	"not_selected": {
@@ -1549,6 +1561,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Not selected"
+		},
+		"de": {
+			"ro_msg": "Nicht ausgewählt"
 		}
 	},
 	"youAlreadySubscribedOnTariff": {
@@ -1557,6 +1572,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "You are already subscribed to this tariff"
+		},
+		"de": {
+			"ro_msg": "Du bist bereits in dieser Preisklasse."
 		}
 	},
 	"tariffActivatedNotEnoughMoney": {
@@ -1569,6 +1587,11 @@ messages = {
 			"ro_msg": "You have already subscribed to this tariff, but it has not"
 			" been activated. \nTo activate it, you need to add %s to your balance" + \
 			emojiCodes.get('dollar') + "(dollars)."
+		},
+		"de": {
+			"ro_msg": "Du bist bereits in dieser Preisklasse, sie wurde aber noch nicht"
+			" aktiviert. \nUm sie zu aktivieren musst Du Deinen Kontostand um %s erhöhen" + \
+			emojiCodes.get('dollar') + "(in Dollar)."
 		}
 	},
 	"notEnoughMoneyToActivate": {
@@ -1581,6 +1604,11 @@ messages = {
 			"ro_msg": "Insufficient funds to activate the tariff.\n"
 			"To fully activate it, you need to add %s to your balance" + \
 			emojiCodes.get('dollar') + "(dollars)."
+		},
+		"de": {
+			"ro_msg": "Deine Mittel sind unzureichend, um diese Preisklasse freizuschalten.\n"
+			"Um sie vollständig zu aktivieren musst Du Deinen Kontostand um %s erhöhen" + \
+			emojiCodes.get('dollar') + "(in Dollar)."
 		}
 	},
 	"tariffSuccessChanged": {
@@ -1589,6 +1617,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The tariff has been successfully applied!"
+		},
+		"de": {
+			"ro_msg": "Deine Preisklasse wurde erfolgreich angepasst!"
 		}
 	},
 	"tariffNotActive": {
@@ -1597,6 +1628,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The tariff is not activated! To activate it, top up your balance"
+		},
+		"de": {
+			"ro_msg": "Die Preisklasse ist nicht aktiv! Lade zum Freischalten Dein Konto auf!"
 		}
 	},
 	"bot_subscription": {
@@ -1605,6 +1639,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " " + "Subscription"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('creditCard') + " " + "Aufstocken"
 		}
 	},
 	"bot_sub_page_header": {
@@ -1613,6 +1650,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " Bot subscription"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('creditCard') + " Bot-Abonnement"
 		}
 	},
 	"donate_page_body": {
@@ -1627,6 +1667,12 @@ messages = {
 			"There are several tariffs. To learn more and subscribe,"
 			"click on the \"Choose a tariff\" button.\nTo deposit money into your "
 			"account, click on the \"Top up balance\" button."
+		},
+		"de": {
+			"ro_msg": "Im Abonnement erhälst Du Zugriff auf alle Funktionen des Bots.\n"
+			"Es gibt mehrere Preisklassen. Um mehr zu erfahren und um zu abonnieren, "
+			"drücke „Preisklasse wählen”!\nUm Dein Konto aufzuladen, "
+			"drücke „Konto aufladen”!"
 		}
 	},
 	"donate_page_referal": {
@@ -1649,6 +1695,16 @@ messages = {
 			" for minimum tariff. If a person refills the balance using your link, then"
 			" your tariff will be changed to the maximum, and its term will increase "
 			"by " + str(int(tariff_ref_sub_period / 24)) + " days."
+		},
+		"de": {
+			"ro_msg": "Werbe Freunde und erhalte Prämien! Folgt jemand Deinem Link"
+			", erhältst Du " + str(
+				int(tariff_ref_period / 24)) + " zusätzliche Tage und " + str(tariff_ref_notifies) \
+			+ " zusätzliche Benachrichtigungen in Deiner aktuellen Preisklasse. Falls Du kein Abonnement besitzt," \
+			" erhältst Du " + str(int(tariff_ref_no_subscription_period / 24)) + " Abonnement-Tage"
+			" in der niedrigsten Preisklasse. Wenn jemand über Deinen Link seinen Kontostand auflädt,"
+			" wechselst Du in die höchste Preisklasse und Dein Abonnement wird "
+			"um " + str(int(tariff_ref_sub_period / 24)) + " Tage verlängert."
 		}
 	},
 	"curr_tariff": {
@@ -1657,6 +1713,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Current tariff"
+		},
+		"de": {
+			"ro_msg": "Aktuelle Preisklasse"
 		}
 	},
 	"you_cant_recieve_notifications": {
@@ -1667,6 +1726,10 @@ messages = {
 		"en": {
 			"ro_msg": "With the current conditions, you will not receive notifications "
 			"about new releases.\nMore details: /subscription"
+		},
+		"de": {
+			"ro_msg": "Unter den aktuellen Bedingungen wirst Du keine Benachrichtigungen "
+			"bei neuen Folgen erhalten.\nWeitere Informationen unter /subscription"
 		}
 	},
 	"tariffs": {
@@ -1675,6 +1738,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('clipboard') + "Choose a tariff"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('clipboard') + "Preisklasse wählen"
 		}
 	},
 	"bot_sub_trfs_page": {
@@ -1700,6 +1766,19 @@ messages = {
 			"immediately\n*But if you decide to switch to a cheaper one, the balance "
 			"will increase by half the cost for the remaining days, except for the "
 			"current one!*"
+		},
+		"de": {
+			"ro_msg": "*" + emojiCodes.get('clipboard') + " Preisklassen*\n\n"
+			"Hier kannst Du eine für Dich passende Preisklasse wählen. Lies Dir "
+			"die verfügbaren Optionen aufmerksam durch! Dann drücke auf die gewünschte "
+			"Preisklasse!\n\nDein Abonnement wird nicht freigeschaltet, bis Du Deinen "
+			"Kontostand auflädst. *Beachte: Deinen Kontostand aufzuladen wird auch als "
+			"Spende gesehen!*"
+			"\n\nWenn Du Dich entscheidest, in eine teurere Preisklasse zu wechseln, wird "
+			"ein Teil der Preisdifferenz für die verbleibende Laufzeit des Abonnements sofort "
+			"abgebucht.\n*Wenn Du aber entscheidest in eine günstigere Preisklasse zu "
+			"wechseln, wird Dein Kontostand um die Hälfte der Kosten für die verbleibende "
+			"Laufzeit erhöht, ausgenommen dem Tag des Wechsels selbst!*"
 		}
 	},
 	"tariff_lvl1": {
@@ -1707,6 +1786,9 @@ messages = {
 			"ro_msg": emojiCodes.get('bronze') + " Бронза"
 		},
 		"en": {
+			"ro_msg": emojiCodes.get('bronze') + " Bronze"
+		},
+		"de": {
 			"ro_msg": emojiCodes.get('bronze') + " Bronze"
 		}
 	},
@@ -1716,6 +1798,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('silver') + " Silver"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('silver') + " Silber"
 		}
 	},
 	"tariff_lvl3": {
@@ -1723,6 +1808,9 @@ messages = {
 			"ro_msg": emojiCodes.get('gold') + " Золото"
 		},
 		"en": {
+			"ro_msg": emojiCodes.get('gold') + " Gold"
+		},
+		"de": {
 			"ro_msg": emojiCodes.get('gold') + " Gold"
 		}
 	},
@@ -1736,6 +1824,11 @@ messages = {
 			"ro_msg": "Cost: %s" + emojiCodes.get('dollar') \
 			+ "(dollars) for 30 days.\nNotifications (for a period of 30 days): %s\n"
 			# "Compression support: (not available at the moment) %s"
+		},
+		"de": {
+			"ro_msg": "Kosten: %s" + emojiCodes.get('dollar') \
+			+ "(in Dollar) für 30 Tage.\nBenachrichtigungen (über eine Laufzeit von 30 Tagen): %s\n"
+			# "Compression support: (not available at the moment) %s"
 		}
 	},
 	"days_left": {
@@ -1744,6 +1837,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Days left: %s"
+		},
+		"de": {
+			"ro_msg": "Verbleibende Tage: %s"
 		}
 	},
 	"notify_left": {
@@ -1752,6 +1848,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Notifications left: %s"
+		},
+		"de": {
+			"ro_msg": "Verbleibende Benachrichtigungen: %s"
 		}
 	},
 	"curr_balance": {
@@ -1760,6 +1859,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Current balance: %s" + emojiCodes.get('dollar')
+		},
+		"de": {
+			"ro_msg": "Kontostand: %s" + emojiCodes.get('dollar')
 		}
 	},
 	"not_enough_for_renewal": {
@@ -1768,6 +1870,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "(not enough for renewal: %s" + emojiCodes.get('dollar') + ")"
+		},
+		"de": {
+			"ro_msg": "(nicht genug für eine Erneuerung: %s" + emojiCodes.get('dollar') + ")"
 		}
 	},
 	"topUpBalance": {
@@ -1776,6 +1881,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('moneyWithWings') + " Top up balance"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('moneyWithWings') + " Konto aufladen"
 		}
 	},
 	"bot_sub_pmnt_page": {
@@ -1804,6 +1912,21 @@ messages = {
 			" by the user can be canceled and the balance canceled at any time without "
 			"giving any reason.\nAt the same time, the administration will contact and "
 			"resolve disputes whenever possible and depending on the situation."
+		},
+		"de": {
+			"ro_msg": "*" + emojiCodes.get('moneyWithWings') + " Einzahlung*\n\n"
+			"Hier kannst Du Dein Konto aufladen. Durch Drücken auf den Knopf "
+			"oder *manuelle Eingabe eines Betrags* erhälst Du einen Link.\n\n"
+			"*Beachte: Deinen Kontostand aufzuladen wird auch als Spende betrachtet.*"
+			" Jegliches Geld (in Dollar) im System entspricht virtuellen Token, "
+			"welche für Spenden gutgeschrieben werden. Sie sind Eigentum des Bot-Betreibers "
+			"und nicht des Nutzers. "
+			"Weder die Betreiber noch der Besitzer des Bots sind verantwortlich für "
+			"gespendetes Geld, Kontostände im System, und virtuelle Token. Die "
+			"vom Nutzer gewählte Preisklasse und dessen Kontostand können jederzeit und "
+			"ohne Angabe von Gründen storniert werden.\nNichtsdestotrotz werden die"
+			" Betreiber wann immer möglich und situationsabhängig den Kontakt suchen, um"
+			" Streitigkeiten aufzuklären."
 		}
 	},
 	"money_came": {
@@ -1812,6 +1935,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Your payment has been credited!"
+		},
+		"de": {
+			"ro_msg": "Deine Zahlung wurde gutgeschrieben!"
 		}
 	},
 	"subscribe_now": {
@@ -1820,6 +1946,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Go to the tariffs page and select the one you want."
+		},
+		"de": {
+			"ro_msg": "Gehe zur Preisklassen-Übersicht und wähle aus, welche Du möchtest."
 		}
 	},
 	"enough_to_prolongation": {
@@ -1828,6 +1957,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "You have sufficient funds to renew."
+		},
+		"de": {
+			"ro_msg": "Du hast ausreichende Mittel zur Erneuerung."
 		}
 	},
 	"not_enough_to_prolongation": {
@@ -1836,6 +1968,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "You do not have enough funds to renew."
+		},
+		"de": {
+			"ro_msg": "Du hast unzureichende Mittel um Dein Abonnement zu erneuern."
 		}
 	},
 	"tariff_prolonged": {
@@ -1844,6 +1979,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The current tariff has been extended."
+		},
+		"de": {
+			"ro_msg": "Das aktuelle Preisklassen-Abonnement wurde verlängert."
 		}
 	},
 	"tariff_prolonged_by_daemon": {
@@ -1852,6 +1990,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Your tariff has been extended! Current conditions:"
+		},
+		"de": {
+			"ro_msg": "Dein Abonnement wurde verlängert! Aktuelle Konditionen:"
 		}
 	},
 	"tariff_cannot_be_prolonged_by_daemon": {
@@ -1862,6 +2003,10 @@ messages = {
 		"en": {
 			"ro_msg": "The tariff has expired, top up the balance. "
 			"Current conditions:"
+		},
+		"de": {
+			"ro_msg": "Die Preisklasse ist ausgelaufen. Lade Dein Konto auf! "
+			"Aktuelle Konditionen:"
 		}
 	},
 	"notificationsEnded": {
@@ -1872,6 +2017,11 @@ messages = {
 		"en": {
 			"ro_msg": "The notification limit has been reached within this expiration "
 			"date.\nWait for a new deadline or switch to a tariff with a higher limit."
+		},
+		"de": {
+			"ro_msg": "Die maximale Anzahl an Benachrichtigungen für die aktuelle Abrechnungsperiode"
+			" wurde erreicht.\nWarte auf die nächste Periode oder wechsle in eine höhere "
+			"Preisklasse mit mehr Benachrichtigungen."
 		}
 	},
 	"award_without_s_new_user": {
@@ -1882,6 +2032,10 @@ messages = {
 		"en": {
 			"ro_msg": "A new user has registered on your link, you were "
 			"subscribed to the tariff! Current conditions:"
+		},
+		"de": {
+			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! "
+			"Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
 		}
 	},
 	"award_with_s_new_user": {
@@ -1891,6 +2045,10 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "A new user has registered using your link, your tariff improved!"
+		},
+		"de": {
+			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! Deine Preisklasse "
+			"hat sich verbessert!"
 		}
 	},
 	"award_without_s_subscribed": {
@@ -1901,6 +2059,10 @@ messages = {
 		"en": {
 			"ro_msg": "The invited user has replenished the balance for the first time,"
 			" you were subscribed to the tariff! Current conditions:"
+		},
+		"de": {
+			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand aufgeladen! "
+			"Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
 		}
 	},
 	"award_with_s_subscribed": {
@@ -1911,6 +2073,10 @@ messages = {
 		"en": {
 			"ro_msg": "The invited user has replenished the balance for the first time,"
 			" your tariff improved! Current conditions:"
+		},
+		"de": {
+			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand aufgeladen! "
+			"Deine Preisklasse hat sich verbessert! Aktuelle Konditionen:"
 		}
 	},
 	"donation": {
