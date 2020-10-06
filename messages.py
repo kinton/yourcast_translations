@@ -995,8 +995,8 @@ messages = {
 		"de": {
 			"ro_msg": emojiCodes.get('gear') + "*Bitrate auswählen*\n\n"
 			"Wenn die Bitrate beispielsweise"
-			" 64 kbit/s beträgt, dann belegt eine 10-minütige Aufnahme etwa 4,6 Megabyte."
-			"\nAnalog verdoppelt sich bei doppelter Bitrate auch die "
+			" 64 kbit/s beträgt, dann belegt eine 10-minütige Aufnahme etwa 4,6 "
+			"Megabyte.\nAnalog verdoppelt sich bei doppelter Bitrate auch die "
 			"Dateigröße.\nDieser Parameter wirkt sich auf die "
 			"Aufnahmequalität aus.\n\nAktuelle Bitrate:"
 		}
@@ -1590,8 +1590,8 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Du bist bereits in dieser Preisklasse, sie wurde aber noch nicht"
-			" aktiviert. \nUm sie zu aktivieren musst Du Deinen Kontostand um %s erhöhen" + \
-			emojiCodes.get('dollar') + "(in Dollar)."
+			" aktiviert. \nUm sie zu aktivieren musst Du Deinen Kontostand um %s "
+			"erhöhen" + emojiCodes.get('dollar') + "(in Dollar)."
 		}
 	},
 	"notEnoughMoneyToActivate": {
@@ -1606,9 +1606,9 @@ messages = {
 			emojiCodes.get('dollar') + "(dollars)."
 		},
 		"de": {
-			"ro_msg": "Deine Mittel sind unzureichend, um diese Preisklasse freizuschalten.\n"
-			"Um sie vollständig zu aktivieren musst Du Deinen Kontostand um %s erhöhen" + \
-			emojiCodes.get('dollar') + "(in Dollar)."
+			"ro_msg": "Deine Mittel sind unzureichend, um diese Preisklasse "
+			"freizuschalten.\nUm sie vollständig zu aktivieren musst Du Deinen "
+			"Kontostand um %s erhöhen" + emojiCodes.get('dollar') + "(in Dollar)."
 		}
 	},
 	"tariffSuccessChanged": {
@@ -1630,7 +1630,8 @@ messages = {
 			"ro_msg": "The tariff is not activated! To activate it, top up your balance"
 		},
 		"de": {
-			"ro_msg": "Die Preisklasse ist nicht aktiv! Lade zum Freischalten Dein Konto auf!"
+			"ro_msg": "Die Preisklasse ist nicht aktiv! Lade zum Freischalten Dein "
+			"Konto auf!"
 		}
 	},
 	"bot_subscription": {
@@ -1699,12 +1700,14 @@ messages = {
 		"de": {
 			"ro_msg": "Werbe Freunde und erhalte Prämien! Folgt jemand Deinem Link"
 			", erhältst Du " + str(
-				int(tariff_ref_period / 24)) + " zusätzliche Tage und " + str(tariff_ref_notifies) \
-			+ " zusätzliche Benachrichtigungen in Deiner aktuellen Preisklasse. Falls Du kein Abonnement besitzt," \
-			" erhältst Du " + str(int(tariff_ref_no_subscription_period / 24)) + " Abonnement-Tage"
-			" in der niedrigsten Preisklasse. Wenn jemand über Deinen Link seinen Kontostand auflädt,"
-			" wechselst Du in die höchste Preisklasse und Dein Abonnement wird "
-			"um " + str(int(tariff_ref_sub_period / 24)) + " Tage verlängert."
+				int(tariff_ref_period / 24)) + " zusätzliche Tage und " + \
+			str(tariff_ref_notifies) + " zusätzliche Benachrichtigungen in Deiner "
+			"aktuellen Preisklasse. Falls Du kein Abonnement besitzt, erhältst Du " + \
+			str(int(tariff_ref_no_subscription_period / 24)) + " Abonnement-Tage"
+			" in der niedrigsten Preisklasse. Wenn jemand über Deinen Link seinen "
+			"Kontostand auflädt, wechselst Du in die höchste Preisklasse und Dein "
+			"Abonnement wird um " + str(int(tariff_ref_sub_period / 24)) + " Tage "
+			"verlängert."
 		}
 	},
 	"curr_tariff": {
@@ -1728,8 +1731,9 @@ messages = {
 			"about new releases.\nMore details: /subscription"
 		},
 		"de": {
-			"ro_msg": "Unter den aktuellen Bedingungen wirst Du keine Benachrichtigungen "
-			"bei neuen Folgen erhalten.\nWeitere Informationen unter /subscription"
+			"ro_msg": "Unter den aktuellen Bedingungen wirst Du keine "
+			"Benachrichtigungen bei neuen Folgen erhalten.\nWeitere Informationen unter"
+			" /subscription"
 		}
 	},
 	"tariffs": {
@@ -1774,11 +1778,12 @@ messages = {
 			"Preisklasse!\n\nDein Abonnement wird nicht freigeschaltet, bis Du Deinen "
 			"Kontostand auflädst. *Beachte: Deinen Kontostand aufzuladen wird auch als "
 			"Spende gesehen!*"
-			"\n\nWenn Du Dich entscheidest, in eine teurere Preisklasse zu wechseln, wird "
-			"ein Teil der Preisdifferenz für die verbleibende Laufzeit des Abonnements sofort "
-			"abgebucht.\n*Wenn Du aber entscheidest in eine günstigere Preisklasse zu "
-			"wechseln, wird Dein Kontostand um die Hälfte der Kosten für die verbleibende "
-			"Laufzeit erhöht, ausgenommen dem Tag des Wechsels selbst!*"
+			"\n\nWenn Du Dich entscheidest, in eine teurere Preisklasse zu wechseln, "
+			"wird ein Teil der Preisdifferenz für die verbleibende Laufzeit des "
+			"Abonnements sofort abgebucht.\n*Wenn Du aber entscheidest in eine "
+			"günstigere Preisklasse zu wechseln, wird Dein Kontostand um die Hälfte der"
+			" Kosten für die verbleibende Laufzeit erhöht, ausgenommen dem Tag des "
+			"Wechsels selbst!*"
 		}
 	},
 	"tariff_lvl1": {
@@ -1827,7 +1832,8 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Kosten: %s" + emojiCodes.get('dollar') \
-			+ "(in Dollar) für 30 Tage.\nBenachrichtigungen (über eine Laufzeit von 30 Tagen): %s\n"
+			+ "(in Dollar) für 30 Tage.\nBenachrichtigungen (über eine Laufzeit von 30"
+			" Tagen): %s\n"
 			# "Compression support: (not available at the moment) %s"
 		}
 	},
@@ -1872,7 +1878,8 @@ messages = {
 			"ro_msg": "(not enough for renewal: %s" + emojiCodes.get('dollar') + ")"
 		},
 		"de": {
-			"ro_msg": "(nicht genug für eine Erneuerung: %s" + emojiCodes.get('dollar') + ")"
+			"ro_msg": "(nicht genug für eine Erneuerung: %s" + \
+			emojiCodes.get('dollar') + ")"
 		}
 	},
 	"topUpBalance": {
@@ -1919,14 +1926,14 @@ messages = {
 			"oder *manuelle Eingabe eines Betrags* erhälst Du einen Link.\n\n"
 			"*Beachte: Deinen Kontostand aufzuladen wird auch als Spende betrachtet.*"
 			" Jegliches Geld (in Dollar) im System entspricht virtuellen Token, "
-			"welche für Spenden gutgeschrieben werden. Sie sind Eigentum des Bot-Betreibers "
-			"und nicht des Nutzers. "
+			"welche für Spenden gutgeschrieben werden. Sie sind Eigentum des "
+			"Bot-Betreibers und nicht des Nutzers. "
 			"Weder die Betreiber noch der Besitzer des Bots sind verantwortlich für "
 			"gespendetes Geld, Kontostände im System, und virtuelle Token. Die "
-			"vom Nutzer gewählte Preisklasse und dessen Kontostand können jederzeit und "
-			"ohne Angabe von Gründen storniert werden.\nNichtsdestotrotz werden die"
-			" Betreiber wann immer möglich und situationsabhängig den Kontakt suchen, um"
-			" Streitigkeiten aufzuklären."
+			"vom Nutzer gewählte Preisklasse und dessen Kontostand können jederzeit und"
+			" ohne Angabe von Gründen storniert werden.\nNichtsdestotrotz werden die"
+			" Betreiber wann immer möglich und situationsabhängig den Kontakt suchen, "
+			"um Streitigkeiten aufzuklären."
 		}
 	},
 	"money_came": {
@@ -1948,7 +1955,8 @@ messages = {
 			"ro_msg": "Go to the tariffs page and select the one you want."
 		},
 		"de": {
-			"ro_msg": "Gehe zur Preisklassen-Übersicht und wähle aus, welche Du möchtest."
+			"ro_msg": "Gehe zur Preisklassen-Übersicht und wähle aus, welche Du "
+			"möchtest."
 		}
 	},
 	"enough_to_prolongation": {
@@ -2019,9 +2027,9 @@ messages = {
 			"date.\nWait for a new deadline or switch to a tariff with a higher limit."
 		},
 		"de": {
-			"ro_msg": "Die maximale Anzahl an Benachrichtigungen für die aktuelle Abrechnungsperiode"
-			" wurde erreicht.\nWarte auf die nächste Periode oder wechsle in eine höhere "
-			"Preisklasse mit mehr Benachrichtigungen."
+			"ro_msg": "Die maximale Anzahl an Benachrichtigungen für die aktuelle "
+			"Abrechnungsperiode wurde erreicht.\nWarte auf die nächste Periode oder "
+			"wechsle in eine höhere Preisklasse mit mehr Benachrichtigungen."
 		}
 	},
 	"award_without_s_new_user": {
@@ -2047,8 +2055,8 @@ messages = {
 			"ro_msg": "A new user has registered using your link, your tariff improved!"
 		},
 		"de": {
-			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! Deine Preisklasse "
-			"hat sich verbessert!"
+			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! Deine "
+			"Preisklasse hat sich verbessert!"
 		}
 	},
 	"award_without_s_subscribed": {
@@ -2061,8 +2069,8 @@ messages = {
 			" you were subscribed to the tariff! Current conditions:"
 		},
 		"de": {
-			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand aufgeladen! "
-			"Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
+			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand "
+			"aufgeladen! Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
 		}
 	},
 	"award_with_s_subscribed": {
@@ -2075,8 +2083,8 @@ messages = {
 			" your tariff improved! Current conditions:"
 		},
 		"de": {
-			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand aufgeladen! "
-			"Deine Preisklasse hat sich verbessert! Aktuelle Konditionen:"
+			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand "
+			"aufgeladen! Deine Preisklasse hat sich verbessert! Aktuelle Konditionen:"
 		}
 	},
 	"donation": {
