@@ -674,7 +674,7 @@ messages = {
 			"ro_msg": "Das Herunterladen wird einige Zeit in Anspruch nehmen."
 		},
 		"he": {
-			"ro_msg": "לוקח זמן להוריד"
+			"ro_msg": "אני מוריד... אנא המתן"
 		}
 
 	},
@@ -722,7 +722,7 @@ messages = {
 			"ro_msg": "Bei [iTunes]"
 		},
 		"he": {
-			"ro_msg": "ב[itunes]"
+			"ro_msg": "ב [itunes]"
 		}
 
 	},
@@ -743,7 +743,7 @@ messages = {
 			"ro_msg": "Oder auf [der Webseite des Podcasts]"
 		},
 		"he": {
-			"ro_msg": "או ב[אתר הפודקאסט]"
+			"ro_msg": "או ב [אתר הפודקאסט]"
 		}
 
 	},
@@ -955,7 +955,7 @@ messages = {
 			"ro_msg": "Bitrate"
 		},
 		"he": {
-			"ro_msg": "קצב סיביות"
+			"ro_msg": "איכות"
 		}
 	},
 	"bitrate_settings_description": {
@@ -999,6 +999,14 @@ messages = {
 			"Megabyte.\nAnalog verdoppelt sich bei doppelter Bitrate auch die "
 			"Dateigröße.\nDieser Parameter wirkt sich auf die "
 			"Aufnahmequalität aus.\n\nAktuelle Bitrate:"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('gear') + " *בחר איכות *\n\n"
+			"לדוגמה, אם האיכות כעת היא"
+			" 64 kbit/s, נפח הקלטה של 10 דקות יהיה 4.6 מ\"ב."
+			"\nלעומת זאת, אם האיכות תהיה פי 2 - גודל הקובץ יהיה"
+			" כפול.\nהפרמטר הזה משפיע על איכות ההקלטה.\n\n"
+			"איכות נוכחית:"
 		}
 	},
 	"do_not_change_bitrate": {
@@ -1016,6 +1024,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Bitrate nicht ändern"
+		},
+		"he": {
+			"ro_msg": "אל תשנה את האיכות"
 		}
 	},
 	"bitrate_changed": {
@@ -1033,6 +1044,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Bitrate geändert, neuer Wert: "
+		},
+		"he": {
+			"ro_msg": "האיכות שונתה. הערך החדש הוא: "
 		}
 	},
 	"podcastOffer": {
@@ -1133,7 +1147,7 @@ messages = {
 			"ro_msg": (
 				emojiCodes.get('magnifier') + "\n"
 				+ "שלח לי את שם הפודקאסט שברצונך למצוא."
-				" לדוגמא, 'הפודיום'")
+				" לדוגמא, 'עושים היסטוריה'")
 		}
 
 	},
@@ -1215,7 +1229,7 @@ messages = {
 			"ro_msg": "Spenden"
 		},
 		"he": {
-			"ro_msg": "רובוט עזרה"
+			"ro_msg": "תמיכה ברובוט זה"
 		}
 	},
 	"subsMessage": {
@@ -1403,12 +1417,12 @@ messages = {
 			" (Diese Definition stammt von Evgeny Myatin.)"
 		},
 		"he": {
-			"ro_msg": "פודקאסטים (מה iPod או מהסטרימינג) הם תוכנית שמע או ווידאו"
-			" שמשודרים על ידי האינטרנט באמצעות פודקאסט"
-			" בעברית פודקאסט היו 'הסכת'."
-			" הפודקאסט הינו מקביל לתוכנית רדיו או טלוויזיה, אך משודר באינטרנט."
-			" לפודקאסטים יש לרוב פרקי זמן קבועים של הפצה."
-			" (הסבר זה נכתב  ע''י יבגני מייטין ותורגם ע''י מקליד תמיד)."
+			"ro_msg": "מה זה פודקאסט? המילה פודקאסט נגזרת מה'אייפוד' ומ'קאסט'"
+			" שזו שיטה לשידור נתונים. הפודקאסט (הסכת בעברית) בעצם הוא כעין תוכנית"
+			" רדיו שמנותקת מגבולות הזמן ו/או המקום."
+			" הרעיון בפודקאסט הוא ליצור תוכנית רדיו שמאפשרת הפצה המתאימה לחדשנות."
+			" הטכנולוגית של היום. אכן, לרוב לפודקאסטים יש זמני שידור קבועים."
+			" (הסבר זה נכתב  ע\"י מקליד תמיד מצוות 'רובוטריק')."
 		}
 	},
 	"functsDescr": {
@@ -1505,9 +1519,9 @@ messages = {
 			" vollständige Liste zu sehen."
 		},
 		"he": {
-			"ro_msg": "כדי למצוא פודקאסטים חדשים כנסו ל /menu ולחצו על חיפוש,"
-			" ושלחו לרובוט את שם הפודקאסט הרצוי או חלק ממנו "
-			" כדי למצוא. ניווט בהחלפה פועל בהרבה רשימות כולל בחיפוש.\n\n"
+			"ro_msg": "כדי למצוא פודקאסטים חדשים כנסו ל /menu ולחצו על חיפוש."
+			" שלחו לרובוט את שם הפודקאסט הרצוי או חלק ממנו "
+			" כדי למצוא.  ניווט בהחלפה פועל בהרבה רשימות כולל בחיפוש.\n\n"
 			"כדי להרשם לפודקאסט לחץ \"Subscribe\" כדי לפתוח את הערוץ של"
 			" הפודקאסט. כדי להאזין לפודקאסטים שלו לחצו על \"Listen\". אם אתה פותח"
 			" הקלטות פודקאסט על ידי לחיצה על כפתור \"Listen\" והזינו את מספר"
@@ -1520,7 +1534,7 @@ messages = {
 			" podcasts\" יזמין אותך להתוודע לחדשים"
 			" בערוצים.\n\n"
 			"חוץ מזה, הרובוט תומך במספר פקודות שמתחילות ב /,"
-			" לדוגמה /menu. לצפיה ברשימת הפקודות המלאה, שלח / בצ'אט."
+			" לדוגמה /menu. לצפיה ברשימת הפקודות המלאה, שלח `/` בצ'אט."
 		}
 	},
 	"yes": {
@@ -1528,21 +1542,24 @@ messages = {
 			"ro_msg": "Да"
 		},
 		"en": {"ro_msg": "Yes"},
-		"de": {"ro_msg": "Ja"}
+		"de": {"ro_msg": "Ja"},
+		"he": {"ro_msg": "כן"}
 	},
 	"no": {
 		"ru": {
 			"ro_msg": "Нет"
 		},
 		"en": {"ro_msg": "No"},
-		"de": {"ro_msg": "Nein"}
+		"de": {"ro_msg": "Nein"},
+		"he": {"ro_msg": "לא"}
 	},
 	"unlimited": {
 		"ru": {
 			"ro_msg": "Неограниченно"
 		},
 		"en": {"ro_msg": "Unlimited"},
-		"de": {"ro_msg": "Unbegrenzt"}
+		"de": {"ro_msg": "Unbegrenzt"},
+		"he": {"ro_msg": "ללא הגבלה"}
 	},
 	"disable": {
 		"ru": {
@@ -1553,6 +1570,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Deaktivieren"
+		},
+		"he": {
+			"ro_msg": "השבת"
 		}
 	},
 	"not_selected": {
@@ -1564,6 +1584,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Nicht ausgewählt"
+		},
+		"he": {
+			"ro_msg": "לא נבחר"
 		}
 	},
 	"youAlreadySubscribedOnTariff": {
@@ -1575,6 +1598,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "Du bist bereits in dieser Preisklasse."
+		},
+		"de": {
+			"ro_msg": "אתה מנוי כבר למסלול זה."
 		}
 	},
 	"tariffActivatedNotEnoughMoney": {
@@ -1592,6 +1618,11 @@ messages = {
 			"ro_msg": "Du bist bereits in dieser Preisklasse, sie wurde aber noch nicht"
 			" aktiviert. \nUm sie zu aktivieren musst Du Deinen Kontostand um %s "
 			"erhöhen" + emojiCodes.get('dollar') + "(in Dollar)."
+		},
+		"he": {
+			"ro_msg": "נרשמת כבר למסלול זה, אבל המסלול עדיין לא"
+			" הופעל. \nעליך להוסיף %s דולר ליתרה שלך כבר להפעיל אותו " + \
+			emojiCodes.get('dollar') + "(dollars)."
 		}
 	},
 	"notEnoughMoneyToActivate": {
@@ -1618,6 +1649,9 @@ messages = {
 		"en": {
 			"ro_msg": "The tariff has been successfully applied!"
 		},
+		"he": {
+			"ro_msg": "המסלול שלך אושר והתחיל בהצלחה!"
+		},
 		"de": {
 			"ro_msg": "Deine Preisklasse wurde erfolgreich angepasst!"
 		}
@@ -1628,6 +1662,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The tariff is not activated! To activate it, top up your balance"
+		},
+		"he": {
+			"ro_msg": "המסלול שלך לא הופעל! כדי להפעיל אותו - בדוק את היתרה שלך"
 		},
 		"de": {
 			"ro_msg": "Die Preisklasse ist nicht aktiv! Lade zum Freischalten Dein "
@@ -1641,6 +1678,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " " + "Subscription"
 		},
+		"he": {
+			"ro_msg": emojiCodes.get('creditCard') + " " + "מינויים"
+		},
 		"de": {
 			"ro_msg": emojiCodes.get('creditCard') + " " + "Aufstocken"
 		}
@@ -1651,6 +1691,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " Bot subscription"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('creditCard') + " מנויים לרובוט"
 		},
 		"de": {
 			"ro_msg": emojiCodes.get('creditCard') + " Bot-Abonnement"
@@ -1668,6 +1711,12 @@ messages = {
 			"There are several tariffs. To learn more and subscribe,"
 			"click on the \"Choose a tariff\" button.\nTo deposit money into your "
 			"account, click on the \"Top up balance\" button."
+		},
+		"he": {
+			"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
+			"ישנם מספר מסלולים. למידע נוסף והרשמה,"
+			"לחץ על כפתור \"Choose a tariff\".\nכדי להפקיד כסף לחשבון "
+			"שלך, לחץ על כפתור \"Top up balance\"."
 		},
 		"de": {
 			"ro_msg": "Im Abonnement erhälst Du Zugriff auf alle Funktionen des Bots.\n"
@@ -1697,6 +1746,16 @@ messages = {
 			" your tariff will be changed to the maximum, and its term will increase "
 			"by " + str(int(tariff_ref_sub_period / 24)) + " days."
 		},
+		"he": {
+			"ro_msg": "הזמינו חברים וקבלו בונוסים! אם חבר שלך הצטרף ע\"י הקישור שלך"
+			", תקבל תוספת של" + str(
+				int(tariff_ref_period / 24)) + " ימים ו" + str(tariff_ref_notifies) \
+			+ " התראות למסלול הנוכחי שלך, או אם אינך מנוי עדיין, תקבל" \
+			+ str(int(tariff_ref_no_subscription_period / 24)) + " ימים למנוי"
+			" למסלול המינימלי. אם חבר שלך ממלא את היתרה שלו באמצעות הקישור שלך,"
+			" המסלול שלך ישתנה למסלול המקסימלי, והתקופה שלו תוארך ל"
+			 + str(int(tariff_ref_sub_period / 24)) + " ימים."
+		},
 		"de": {
 			"ro_msg": "Werbe Freunde und erhalte Prämien! Folgt jemand Deinem Link"
 			", erhältst Du " + str(
@@ -1717,6 +1776,9 @@ messages = {
 		"en": {
 			"ro_msg": "Current tariff"
 		},
+		"he": {
+			"ro_msg": "מסלול נוכחי"
+		},
 		"de": {
 			"ro_msg": "Aktuelle Preisklasse"
 		}
@@ -1730,6 +1792,10 @@ messages = {
 			"ro_msg": "With the current conditions, you will not receive notifications "
 			"about new releases.\nMore details: /subscription"
 		},
+		"he": {
+			"ro_msg": "בתנאים הנוכחיים לא תקבל תהראות על פרקים "
+			"ומהדורות חדשות.\nלפרטים נוספים /subscription"
+		},
 		"de": {
 			"ro_msg": "Unter den aktuellen Bedingungen wirst Du keine "
 			"Benachrichtigungen bei neuen Folgen erhalten.\nWeitere Informationen unter"
@@ -1742,6 +1808,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('clipboard') + "Choose a tariff"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('clipboard') + "בחר מסלול"
 		},
 		"de": {
 			"ro_msg": emojiCodes.get('clipboard') + "Preisklasse wählen"
