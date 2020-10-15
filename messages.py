@@ -674,7 +674,7 @@ messages = {
 			"ro_msg": "Das Herunterladen wird einige Zeit in Anspruch nehmen."
 		},
 		"he": {
-			"ro_msg": "אני מוריד... אנא המתן"
+			"ro_msg": "לוקח זמן להוריד, אנא המתן"
 		}
 
 	},
@@ -955,7 +955,7 @@ messages = {
 			"ro_msg": "Bitrate"
 		},
 		"he": {
-			"ro_msg": "איכות"
+			"ro_msg": "קצב סיביות (איכות)"
 		}
 	},
 	"bitrate_settings_description": {
