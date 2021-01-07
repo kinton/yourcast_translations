@@ -1,6 +1,6 @@
 from config import (
 	tariff_ref_period, tariff_ref_no_subscription_period,
-	tariff_ref_notifies, tariff_ref_sub_period)
+	tariff_ref_notifies, tariff_ref_sub_period, max_subscriptions_without_tariff)
 
 def get_language(lang_code):
 	# Иногда language_code может быть None
@@ -1304,6 +1304,18 @@ messages = {
 			"ro_msg": "אין לך מינויים!"
 		}
 	},
+	"withoutTariffSubscriptionsLimited": {
+		"ru": {
+			"ro_msg": "Без тарифа количество подписок ограничено. Вы достигли"
+			" предела. Отпишитесь от другого подкаста или подпишитесь на бота"
+			" /subscription."
+		},
+		"en": {
+			"ro_msg": "Without tariff, the number of subscriptions is limited."
+			" You have now reached the limit. Unsubscribe from another podcast"
+			" or upgrade to any tariff /subscription."
+		}
+	},
 	"podcastDoesNotExist": {
 		"ru": {
 			"ro_msg": "Не удалось получить данные подкаста, попробуйте позже."
@@ -1826,7 +1838,9 @@ messages = {
 			"\n\nЕсли вы решите перейти на более дорогой тариф, то сразу же спишется "
 			"часть разницы между тарифами за оставшиеся дни\n*Но если решите перейти "
 			"на более дешёвый, то баланс увеличится на половину стоимости за оставшиеся"
-			" дни, кроме текущего!*"
+			" дни, кроме текущего!*\n\n"
+			"Кроме того, если вы не подписаны на тариф, то вы не сможете подписаться"
+			" более чем на " + str(max_subscriptions_without_tariff) + " подкастов."
 		},
 		"en": {
 			"ro_msg": "*" + emojiCodes.get('clipboard') + " Tariffs*\n\n"
@@ -1838,7 +1852,10 @@ messages = {
 			"difference between the tariffs for the remaining days will be debited "
 			"immediately\n*But if you decide to switch to a cheaper one, the balance "
 			"will increase by half the cost for the remaining days, except for the "
-			"current one!*"
+			"current one!*\n\n"
+			"In addition, if you are not subscribed to the tariff, then you will not be"
+			" able to subscribe to more than " \
+			+ str(max_subscriptions_without_tariff) + " podcasts."
 		},
 		"de": {
 			"ro_msg": "*" + emojiCodes.get('clipboard') + " Preisklassen*\n\n"
@@ -1852,7 +1869,9 @@ messages = {
 			"Abonnements sofort abgebucht.\n*Wenn Du aber entscheidest in eine "
 			"günstigere Preisklasse zu wechseln, wird Dein Kontostand um die Hälfte der"
 			" Kosten für die verbleibende Laufzeit erhöht, ausgenommen dem Tag des "
-			"Wechsels selbst!*"
+			"Wechsels selbst!*\n\n"
+			"Wenn Sie den Plan nicht abonniert haben, können Sie nicht mehr als " \
+			+ str(max_subscriptions_without_tariff) + " Podcasts abonnieren."
 		}
 	},
 	"tariff_lvl1": {
