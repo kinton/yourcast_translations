@@ -1,6 +1,7 @@
 from config import (
 	tariff_ref_period, tariff_ref_no_subscription_period,
-	tariff_ref_notifies, tariff_ref_sub_period, max_subscriptions_without_tariff)
+	tariff_ref_notifies, tariff_ref_sub_period, max_subscriptions_without_tariff,
+	donate_link)
 
 def get_language(lang_code):
 	# Иногда language_code может быть None
@@ -53,7 +54,8 @@ emojiCodes = {
 	'bronze': '\U0001F949',
 	'silver': '\U0001F948',
 	'gold': '\U0001F947',
-	'gear': '\U00002699'
+	'gear': '\U00002699',
+	'link': '\U0001F517'
 }
 
 
@@ -680,117 +682,117 @@ messages = {
 	},
 	"tooBigRecord": {
 		"ru": {
-			"ro_msg": "К сожалению, объём файла подкаста слишком большой для серверов"
-			" Telegram. Однако, вы можете прослушать [по ссылке]"
+			"ro_msg": "К сожалению, объём файла подкаста слишком большой"
+			" Однако, вы можете прослушать <a href=\"%s\">по ссылке</a>"
 		},
 		"en": {
-			"ro_msg": "Unfortunately, the podcast file too big for Telegram servers."
-			" But you still can listen to it [via link]"
+			"ro_msg": "Unfortunately, the podcast file too big."
+			" But you still can listen to it <a href=\"%s\">via link</a>"
 		},
 		"pt-BR": {
-			"ro_msg": "Infelizmente, o arquivo do podcast é muito grande para os"
-			" servidores do Telegram. Você ainda poderá ouvir através deste [link]"
+			"ro_msg": "Infelizmente, o arquivo do podcast é muito grande."
+			" Você ainda poderá ouvir através deste <a href=\"%s\">link</a>"
 		},
 		"es": {
-			"ro_msg": "Lamentablemente el tamaño del podcast es demasiado grande para"
-			" los servidores de Telegram. Usted puede escucharlo [via link]"
+			"ro_msg": "Lamentablemente el tamaño del podcast es demasiado grande."
+			" Usted puede escucharlo <a href=\"%s\">via link</a>"
 		},
 		"de": {
-			"ro_msg": "Leider ist die Datei der Folge zu groß für die Telegram-Server."
-			" Du kannst sie aber [über den Link] anhören"
+			"ro_msg": "Leider ist die Datei der Folge zu groß."
+			" Du kannst sie aber <a href=\"%s\">über den Link</a> anhören"
 		},
 		"he": {
-			"ro_msg": "לצערינו, גודל הפודקאסט מידי גדול בשביל שרתי טלגרם."
-			" אבל אתם עדיין יכולים להאזין לו [ע''י קישור]"
+			"ro_msg": "לצערינו, גודל הפודקאסט מידי גדול."
+			" אבל אתם עדיין יכולים להאזין לו <a href=\"%s\">ע''י קישור</a>"
 		}
 
 	},
 	"tooBigRecord2": {
 		"ru": {
-			"ro_msg": "В [itunes]"
+			"ro_msg": "В <a href=\"%s\">itunes</a>"
 		},
 		"en": {
-			"ro_msg": "In [itunes]"
+			"ro_msg": "In <a href=\"%s\">itunes</a>"
 		},
 		"pt-BR": {
-			"ro_msg": "No [itunes]"
+			"ro_msg": "No <a href=\"%s\">itunes</a>"
 		},
 		"es": {
-			"ro_msg": "En [itunes]"
+			"ro_msg": "En <a href=\"%s\">itunes</a>"
 		},
 		"de": {
-			"ro_msg": "Bei [iTunes]"
+			"ro_msg": "Bei <a href=\"%s\">itunes</a>"
 		},
 		"he": {
-			"ro_msg": "ב [itunes]"
+			"ro_msg": "ב <a href=\"%s\">itunes</a>"
 		}
 
 	},
 	"tooBigRecord3": {
 		"ru": {
-			"ro_msg": "Или на [сайте подкаста]"
+			"ro_msg": "Или на <a href=\"%s\">сайте подкаста</a>"
 		},
 		"en": {
-			"ro_msg": "Or on [the podcast web site]"
+			"ro_msg": "Or on <a href=\"%s\">the podcast web site</a>"
 		},
 		"pt-BR": {
-			"ro_msg": "Ou no [site do podcast]"
+			"ro_msg": "Ou no <a href=\"%s\">site do podcast</a>"
 		},
 		"es": {
-			"ro_msg": "O en el [sitio web del podcast]"
+			"ro_msg": "O en el <a href=\"%s\">sitio web del podcast</a>"
 		},
 		"de": {
-			"ro_msg": "Oder auf [der Webseite des Podcasts]"
+			"ro_msg": "Oder auf <a href=\"%s\">der Webseite des Podcasts</a>"
 		},
 		"he": {
-			"ro_msg": "או ב [אתר הפודקאסט]"
+			"ro_msg": "או ב <a href=\"%s\">אתר הפודקאסט</a>"
 		}
 
 	},
 	"recordUnavaliable": {
 		"ru": {
 			"ro_msg": "К сожалению, файл подкаста недоступен."
-			" Попробуйте открыть его на [официальном сайте]("
+			" Попробуйте открыть его на <a href=\"%s\">официальном сайте</a>"
 		},
 		"en": {
 			"ro_msg": "Unfortunately, the podcast file is unavaliable."
-			" Try to open it’s [official site]("
+			" Try to open it’s <a href=\"%s\">official site</a>"
 		},
 		"pt-BR": {
 			"ro_msg": "Infelizmente, o arquivo do podcast não está disponível."
-			" Tente abrir o [site oficial]("
+			" Tente abrir o <a href=\"%s\">site oficial</a>"
 		},
 		"es": {
 			"ro_msg": "Lamentablemente el fichero del podcast no está disponoble."
-			" Intenta abrir su [sitio oficial]("
+			" Intenta abrir su <a href=\"%s\">sitio oficial</a>"
 		},
 		"de": {
 			"ro_msg": "Leider ist die Datei der Episode nicht verfügbar."
-			" Versuche es auf der [offiziellen Webseite]("
+			" Versuche es auf der <a href=\"%s\">offiziellen Webseite</a>"
 		},
 		"he": {
 			"ro_msg": "לצערינו, קובץ הפודקאסט לא ניתן לבחירה."
-			" נסה לפתוח את [האתר הרשמי]("
+			" נסה לפתוח את <a href=\"%s\">האתר הרשמי</a>"
 		}
 	},
 	"recordUnavaliable2": {
 		"ru": {
-			"ro_msg": "Или по [прямой ссылке на файл]("
+			"ro_msg": "Или по <a href=\"%s\">прямой ссылке на файл</a>"
 		},
 		"en": {
-			"ro_msg": "Or by [direct link to the file]("
+			"ro_msg": "Or by <a href=\"%s\">direct link to the file</a>"
 		},
 		"pt-BR": {
-			"ro_msg": "Ou pelo [link direto para o arquivo]("
+			"ro_msg": "Ou pelo <a href=\"%s\">link direto para o arquivo</a>"
 		},
 		"es": {
-			"ro_msg": "O por [enlace directo al archivo]("
+			"ro_msg": "O por <a href=\"%s\">enlace directo al archivo</a>"
 		},
 		"de": {
-			"ro_msg": "Oder mit dem [Link zur Datei]("
+			"ro_msg": "Oder mit dem <a href=\"%s\">Link zur Datei</a>"
 		},
 		"he": {
-			"ro_msg": "או ע''י [קישור ישיר לקובץ]("
+			"ro_msg": "או ע''י <a href=\"%s\">קישור ישיר לקובץ</a>"
 		}
 	},
 	"search": {
@@ -812,7 +814,26 @@ messages = {
 		"he": {
 			"ro_msg": emojiCodes.get('magnifier') + " " + "חפש"
 		}
-
+	},
+	"add_by_rss": {
+		"ru": {
+			"ro_msg": emojiCodes.get('link') + " " + "Добавить по RSS"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('link') + " " + "Add by RSS"
+		}
+	},
+	"addingByRssMessage": {
+		"ru": {
+			"ro_msg": emojiCodes.get('link') + " " + "Чтобы добавить подкаст, пришлите"
+			" ссылку на RSS в формате https://host/url-path?params"
+			"\n\nСервисы, которые поддерживает бот:"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('link') + " " + "To add a podcast, please send"
+			" an RSS link in the format https://host/url-path?params"
+			"\n\nServices that the bot supports:"
+		}
 	},
 	"subscriptions": {
 		"ru": {
@@ -1093,22 +1114,29 @@ messages = {
 	},
 	"menuMessage": {
 		"ru": {
-			"ro_msg": "Выберите действие из предложенных:"
+			"ro_msg": "*Внимание! Автор бота не имеет отношения к "
+			"подкастам и их аудиозаписям.*\n\nВыберите действие из предложенных:"
 		},
 		"en": {
-			"ro_msg": "Please choose what you want to do:"
+			"ro_msg": "*Attention! The bot author is not related to podcasts"
+			" and their audio recordings.*\n\nPlease choose what you want to do:"
 		},
 		"pt-BR": {
-			"ro_msg": "Por favor, escolha uma das opções a seguir:"
+			"ro_msg": "*Atenção! O autor do bot não está relacionado a podcasts e "
+			"suas gravações de áudio.*\n\nPor favor, escolha uma das opções a seguir:"
 		},
 		"es": {
-			"ro_msg": "Por favor, seleccione lo que quiere hacer:"
+			"ro_msg": "*¡Atención! El autor del bot no está relacionado con los "
+			"podcasts y sus grabaciones de audio.*\n\n"
+			"Por favor, seleccione lo que quiere hacer:"
 		},
 		"de": {
-			"ro_msg": "Bitte wähle eine der folgenden Möglichkeiten:"
+			"ro_msg": "*Beachtung! Der Bot-Autor ist nicht mit Podcasts und deren "
+			"Audioaufnahmen verwandt.*\n\nBitte wähle eine der folgenden Möglichkeiten:"
 		},
 		"he": {
-			"ro_msg": "אנא בחר מה שברצונך לעשות:"
+			"ro_msg": "*תשומת הלב! כותב הבוט אינו קשור לפודקאסטים ולהקלטות השמע שלהם.*"
+			"\n\nאנא בחר מה שברצונך לעשות:"
 		}
 
 	},
@@ -2199,43 +2227,47 @@ messages = {
 		"ru": {
 			"ro_msg": "Вы можете помочь боту с развитием!\n"
 			"Отправьте сумму боту или пожертвуйте на"
-			" [yasobe.ru](https://yasobe.ru/na/yourcastbot_support)."
+			" [Patreon.com](%s)" % donate_link
 		},
 		"en": {
 			"ro_msg": "You can support this bot with a donation!\n\n"
-			"Please send a message with the amount in rubles. You can see the exchange"
-			" rate to the US dollar under this link:"
-			" https://investing.com/currencies/usd-rub.\n\n"
-			"Or donate on [yasobe.ru](https://yasobe.ru/na/yourcastbot_support)."
+			"Donate on [Patreon.com](%s)" % donate_link + \
+			"\n\nOr send a message with the amount in rubles. "
+			"You can see the exchange rate to the US dollar under this link:"
+			" https://investing.com/currencies/usd-rub"
 		},
 		"pt-BR": {
 			"ro_msg": "Você pode ajudar o bot com uma doação!\n\n"
-			"Por favor, envie o valor em rublos. Você pode descobrir a taxa de câmbio"
-			" do dólar americano neste link:"
-			" https: //investing.com/currencies/usd-rub.\n\n"
-			"Ou faça uma doação em"
-			" [yasobe.ru](https://yasobe.ru/na/yourcastbot_support)."
+			"Faça uma doação em [Patreon.com](%s)" % donate_link + \
+			"\n\nOu por favor, envie o valor em rublos. Você pode descobrir a taxa de "
+			"câmbio do dólar americano neste link:"
+			" https: //investing.com/currencies/usd-rub"
 		},
 		"es": {
-			"ro_msg": "¡Puedes ayudar al bot con una donación! Por favor envíe la"
+			"ro_msg": "¡Puedes ayudar al bot con una donación!\n\n"
+			"Donar en [Patreon.com](%s)" % donate_link + \
+			"\n\nO Por favor envíe la"
 			" cantidad en rublos. Puede encontrar el tipo de cambio del dólar"
 			" estadounidense en este enlace:"
-			" https: //investing.com/currencies/usd-rub.\n\n"
-			"O donar en [yasobe.ru](https://yasobe.ru/na/yourcastbot_support)."
+			" https: //investing.com/currencies/usd-rub"
 		},
 		"de": {
 			"ro_msg": "Du kannst den Bot mit einer Spende unterstützen!\n\n"
-			"Bitte sende den Betrag in Rubeln als Nachricht. Den aktuellen Wechselkurs"
-			" für Euro findest Du hier:"
-			" https://www.investing.com/currencies/eur-rub.\n\n"
-			"Alternativ kannst Du über"
-			" [yasobe.ru](https://yasobe.ru/na/yourcastbot_support) spenden."
+			"Spenden Sie für [Patreon.com](%s)" % donate_link + \
+			"\n\nAlternativ bitte sende den Betrag in Rubbeln als Nachricht. "
+			"Den aktuellen Wechselkurs für Euro findest Du hier:"
+			" https://www.investing.com/currencies/eur-rub"
 		},
 		"he": {
 			"ro_msg": "אתה יכול לעזור לרובוט הזה ולתרום!\n\n"
-			"אנא שלחו את הסכום ברובלים. אתה יכול לגלות את שער החליפין לדולר"
-			" בקישור הזה: https://investing.com/currencies/usd-rub.\n\n"
-			"או לתרום הלאה [yasobe.ru](https://yasobe.ru/na/yourcastbot_support)."
+			"לתרום הלאה [Patreon.com](%s)" % donate_link + \
+			"\n\nאו אנא שלחו את הסכום ברובלים. אתה יכול לגלות את שער החליפין לדולר"
+			" בקישור הזה: https://investing.com/currencies/usd-rub"
+		}
+	},
+	"patreonShort": {
+		"en": {
+			"ro_msg": "[Patreon.com](%s)" % donate_link
 		}
 	},
 	"notANumber": {
