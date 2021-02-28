@@ -55,7 +55,8 @@ emojiCodes = {
 	'silver': '\U0001F948',
 	'gold': '\U0001F947',
 	'gear': '\U00002699',
-	'link': '\U0001F517'
+	'link': '\U0001F517',
+	'goldenHeart': '\U0001F49B'
 }
 
 
@@ -589,9 +590,20 @@ messages = {
 		"en": {
 			"ro_msg": "Error! Try again later or contact the developer"
 		},
+		"pt-BR": {
+			"ro_msg": "Erro! "
+			"Tente novamente mais tarde ou entre em contato com o desenvolvedor"
+		},
+		"es": {
+			"ro_msg": "¡error! "
+			"Vuelve a intentarlo más tarde o comunícate con el desarrollador."
+		},
 		"de": {
 			"ro_msg": "Ein Fehler ist aufgetreten! Versuche es später erneut oder "
 			"setze Dich mit dem Entwickler in Verbindung!"
+		},
+		"he": {
+			"ro_msg": "שְׁגִיאָה! נסה שוב מאוחר יותר או פנה למפתח"
 		}
 	},
 	"parsingError": {
@@ -821,6 +833,18 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('link') + " " + "Add by RSS"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('link') + " " + "Adicionar por RSS"
+		},
+		"es": {
+			"ro_msg": emojiCodes.get('link') + " " + "Agregar por RSS"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('link') + " " + "Per RSS hinzufügen"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('link') + " " + "הוסף באמצעות RSS"
 		}
 	},
 	"addingByRssMessage": {
@@ -833,6 +857,26 @@ messages = {
 			"ro_msg": emojiCodes.get('link') + " " + "To add a podcast, please send"
 			" an RSS link in the format https://host/url-path?params"
 			"\n\nServices that the bot supports:"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('link') + " " + "Para adicionar um podcast, envie "
+			"um link RSS no formato https://host/url-path?params"
+			"\n\nServiços que o bot suporta:"
+		},
+		"es": {
+			"ro_msg": emojiCodes.get('link') + " " + "Para agregar un podcast, envíe un"
+			" enlace RSS en el formato https://host/url-path?params"
+			"\n\nServicios que admite el bot:"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('link') + " " + "Um einen Podcast hinzuzufügen, "
+			"senden Sie bitte einen RSS-Link im Format https://host/url-path?params"
+			"\n\nVom Bot unterstützte Dienste:"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('link') + " " + "כדי להוסיף פודקאסט,"
+			" אנא שלח קישור RSS בפורמט https://host/url-path?params"
+			"\n\nשירותים שהבוט תומך בהם:"
 		}
 	},
 	"subscriptions": {
@@ -1112,6 +1156,52 @@ messages = {
 		}
 
 	},
+	"another_projects": {
+		"ru": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "Другое"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "Another"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "Outro"
+		},
+		"es": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "Otro"
+		},
+		"de": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "Ein weiterer"
+		},
+		"he": {
+			"ro_msg": emojiCodes.get('goldenHeart') + " " + "אַחֵר"
+		}
+	},
+	"another_projects_text": {
+		"ru": {
+			"ro_msg": "Кроме данного бота, существуют другие проекты от разработчика."
+			" На данный момент вы можете попробовать следующий проект:"
+		},
+		"en": {
+			"ro_msg": "In addition to this bot, there are other projects from the "
+			"developer. For now, you can try the following project:"
+		},
+		"pt-BR": {
+			"ro_msg": "Além desse bot, existem outros projetos do desenvolvedor. "
+			"Por enquanto, você pode tentar o seguinte projeto:"
+		},
+		"es": {
+			"ro_msg": "Además de este bot, hay otros proyectos del desarrollador. "
+			"Por ahora, puedes probar el siguiente proyecto:"
+		},
+		"de": {
+			"ro_msg": "Neben diesem Bot gibt es noch weitere Projekte des Entwicklers."
+			" Im Moment können Sie das folgende Projekt ausprobieren:"
+		},
+		"he": {
+			"ro_msg": "בנוסף לבוט זה, ישנם פרויקטים נוספים של היזם. "
+			"לעת עתה תוכל לנסות את הפרויקט הבא:"
+		}
+	},
 	"menuMessage": {
 		"ru": {
 			"ro_msg": "*Внимание! Автор бота не имеет отношения к "
@@ -1342,6 +1432,25 @@ messages = {
 			"ro_msg": "Without tariff, the number of subscriptions is limited."
 			" You have now reached the limit. Unsubscribe from another podcast"
 			" or upgrade to any tariff /subscription."
+		},
+		"pt-BR": {
+			"ro_msg": "Sem tarifa, o número de assinaturas é limitado. "
+			"Você agora atingiu o limite. Cancele a assinatura de outro podcast "
+			"ou atualize para qualquer tarifa /subscription."
+		},
+		"es": {
+			"ro_msg": "Sin tarifa, el número de suscripciones es limitado. "
+			"Ahora ha alcanzado el límite. Cancele la suscripción a otro podcast "
+			"o actualice a cualquier tarifa /subscription."
+		},
+		"de": {
+			"ro_msg": "Ohne Tarif ist die Anzahl der Abonnements begrenzt. "
+			"Sie haben jetzt das Limit erreicht. Melden Sie sich von einem anderen "
+			"Podcast ab oder aktualisieren Sie auf einen Tarif /subscription."
+		},
+		"he": {
+			"ro_msg": "ללא תעריף, מספר המנויים מוגבל. עכשיו הגעת לגבול. "
+			"בטל את הרישום לפודקאסט אחר או שדרג לתעריף כלשהו /subscription"
 		}
 	},
 	"podcastDoesNotExist": {
@@ -1582,6 +1691,8 @@ messages = {
 			"ro_msg": "Да"
 		},
 		"en": {"ro_msg": "Yes"},
+		"pt-BR": {"ro_msg": "Sim"},
+		"es": {"ro_msg": "Sí"},
 		"de": {"ro_msg": "Ja"},
 		"he": {"ro_msg": "כן"}
 	},
@@ -1590,6 +1701,8 @@ messages = {
 			"ro_msg": "Нет"
 		},
 		"en": {"ro_msg": "No"},
+		"pt-BR": {"ro_msg": "Não"},
+		"es": {"ro_msg": "No"},
 		"de": {"ro_msg": "Nein"},
 		"he": {"ro_msg": "לא"}
 	},
@@ -1598,6 +1711,8 @@ messages = {
 			"ro_msg": "Неограниченно"
 		},
 		"en": {"ro_msg": "Unlimited"},
+		"pt-BR": {"ro_msg": "Ilimitado"},
+		"es": {"ro_msg": "Ilimitado"},
 		"de": {"ro_msg": "Unbegrenzt"},
 		"he": {"ro_msg": "ללא הגבלה"}
 	},
@@ -1607,6 +1722,12 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Disable"
+		},
+		"pt-BR": {
+			"ro_msg": "Desabilitar"
+		},
+		"es": {
+			"ro_msg": "Desactivar"
 		},
 		"de": {
 			"ro_msg": "Deaktivieren"
@@ -1621,6 +1742,12 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Not selected"
+		},
+		"pt-BR": {
+			"ro_msg": "Não selecionado"
+		},
+		"es": {
+			"ro_msg": "No seleccionado"
 		},
 		"de": {
 			"ro_msg": "Nicht ausgewählt"
@@ -1794,7 +1921,7 @@ messages = {
 			+ str(int(tariff_ref_no_subscription_period / 24)) + " ימים למנוי"
 			" למסלול המינימלי. אם חבר שלך ממלא את היתרה שלו באמצעות הקישור שלך,"
 			" המסלול שלך ישתנה למסלול המקסימלי, והתקופה שלו תוארך ל"
-			 + str(int(tariff_ref_sub_period / 24)) + " ימים."
+			+ str(int(tariff_ref_sub_period / 24)) + " ימים."
 		},
 		"de": {
 			"ro_msg": "Werbe Freunde und erhalte Prämien! Folgt jemand Deinem Link"
