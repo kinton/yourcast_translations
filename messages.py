@@ -628,7 +628,16 @@ messages = {
 		"he": {
 			"ro_msg": "מצטערים, אירעו שגיאות בקבלת המידע על הפודקאסט."
 		}
-
+	},
+	"notFoundOrFuture": {
+		"ru": {
+			"ro_msg": "Запись не найдена (удалена или изменена), "
+			"или вы достигли последнего выпуска."
+		},
+		"en": {
+			"ro_msg": "The record was not found (deleted or changed), "
+			"or you have reached the latest release."
+		},
 	},
 	"gettingStateError": {
 		"ru": {
@@ -939,7 +948,6 @@ messages = {
 		"he": {
 			"ro_msg": "מעודכן"
 		}
-
 	},
 	"uploaded": {
 		"ru": {
@@ -959,6 +967,15 @@ messages = {
 		},
 		"he": {
 			"ro_msg": "הועלה"
+		}
+
+	},
+	"loadNextRecord": {
+		"ru": {
+			"ro_msg": "Следующий выпуск"
+		},
+		"en": {
+			"ro_msg": "Next episode"
 		}
 
 	},
@@ -1453,6 +1470,22 @@ messages = {
 			"בטל את הרישום לפודקאסט אחר או שדרג לתעריף כלשהו /subscription"
 		}
 	},
+	"withoutTariffUpdateLimited": {
+		"ru": {
+			"ro_msg": "Без тарифа количество подкастов при ручном обновлении ограничено"
+			" " + str(max_subscriptions_without_tariff) + \
+			". Перейдите на другой тариф /subscription \n\n"
+			"Вы можете помочь боту с развитием! /donate или пожертвуйте на"
+			" [Patreon.com](%s)" % donate_link
+		},
+		"en": {
+			"ro_msg": "Without tariff, the number of podcasts with manual update is "
+			"limited to " + str(max_subscriptions_without_tariff) + \
+			". Upgrade to any tariff /subscription\n\n"
+			"You can support this bot with a donation! /donate or"
+			" [Patreon.com](%s)" % donate_link
+		}
+	},
 	"podcastDoesNotExist": {
 		"ru": {
 			"ro_msg": "Не удалось получить данные подкаста, попробуйте позже."
@@ -1868,29 +1901,37 @@ messages = {
 	},
 	"donate_page_body": {
 		"ru": {
-			"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота.\n"
-			"Существует несколько тарифов. Чтобы узнать подробнее и подписаться, "
-			"нажмите на кнопку \"Выбрать тариф\".\nЧтобы внести деньги на счёт,"
-			" нажмите на кноку \"Пополнить баланс\"."
+			"ro_msg": "Данный функционал сейчас недоступен. Попробуйте поддержать на "
+			"[Patreon.com](%s)" % donate_link + ", а затем связаться с создателем."
 		},
 		"en": {
-			"ro_msg": "Subscription allows you to access all the features of the bot.\n"
-			"There are several tariffs. To learn more and subscribe,"
-			"click on the \"Choose a tariff\" button.\nTo deposit money into your "
-			"account, click on the \"Top up balance\" button."
-		},
-		"he": {
-			"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
-			"ישנם מספר מסלולים. למידע נוסף והרשמה,"
-			"לחץ על כפתור \"Choose a tariff\".\nכדי להפקיד כסף לחשבון "
-			"שלך, לחץ על כפתור \"Top up balance\"."
-		},
-		"de": {
-			"ro_msg": "Im Abonnement erhälst Du Zugriff auf alle Funktionen des Bots.\n"
-			"Es gibt mehrere Preisklassen. Um mehr zu erfahren und um zu abonnieren, "
-			"drücke „Preisklasse wählen”!\nUm Dein Konto aufzuladen, "
-			"drücke „Konto aufladen”!"
+			"ro_msg": "This functionality is currently unavailable. Try to support on "
+			"[Patreon.com](%s)" % donate_link + " and then contact the creator."
 		}
+		# "ru": {
+		# 	"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота.\n"
+		# 	"Существует несколько тарифов. Чтобы узнать подробнее и подписаться, "
+		# 	"нажмите на кнопку \"Выбрать тариф\".\nЧтобы внести деньги на счёт,"
+		# 	" нажмите на кноку \"Пополнить баланс\"."
+		# },
+		# "en": {
+		# 	"ro_msg": "Subscription allows you to access all the features of the bot.\n"
+		# 	"There are several tariffs. To learn more and subscribe,"
+		# 	"click on the \"Choose a tariff\" button.\nTo deposit money into your "
+		# 	"account, click on the \"Top up balance\" button."
+		# },
+		# "he": {
+		# 	"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
+		# 	"ישנם מספר מסלולים. למידע נוסף והרשמה,"
+		# 	"לחץ על כפתור \"Choose a tariff\".\nכדי להפקיד כסף לחשבון "
+		# 	"שלך, לחץ על כפתור \"Top up balance\"."
+		# },
+		# "de": {
+		# 	"ro_msg": "Im Abonnement erhälst Du Zugriff auf alle Funktionen des Bots.\n"
+		# 	"Es gibt mehrere Preisklassen. Um mehr zu erfahren und um zu abonnieren, "
+		# 	"drücke „Preisklasse wählen”!\nUm Dein Konto aufzuladen, "
+		# 	"drücke „Konto aufladen”!"
+		# }
 	},
 	"donate_page_referal": {
 		"ru": {
@@ -2353,48 +2394,54 @@ messages = {
 	"donateMessage": {
 		"ru": {
 			"ro_msg": "Вы можете помочь боту с развитием!\n"
-			"Отправьте сумму боту или пожертвуйте на"
+			# "Отправьте сумму боту или пожертвуйте на"
+			"Пожертвуйте на"
 			" [Patreon.com](%s)" % donate_link
 		},
 		"en": {
 			"ro_msg": "You can support this bot with a donation!\n\n"
-			"Donate on [Patreon.com](%s)" % donate_link + \
-			"\n\nOr send a message with the amount in rubles. "
-			"You can see the exchange rate to the US dollar under this link:"
-			" https://investing.com/currencies/usd-rub"
+			"Donate on [Patreon.com](%s)" % donate_link
+			# "Donate on [Patreon.com](%s)" % donate_link + \
+			# "\n\nOr send a message with the amount in rubles. "
+			# "You can see the exchange rate to the US dollar under this link:"
+			# " https://investing.com/currencies/usd-rub"
 		},
 		"pt-BR": {
 			"ro_msg": "Você pode ajudar o bot com uma doação!\n\n"
-			"Faça uma doação em [Patreon.com](%s)" % donate_link + \
-			"\n\nOu por favor, envie o valor em rublos. Você pode descobrir a taxa de "
-			"câmbio do dólar americano neste link:"
-			" https: //investing.com/currencies/usd-rub"
+			"Faça uma doação em [Patreon.com](%s)" % donate_link
+			# "Faça uma doação em [Patreon.com](%s)" % donate_link + \
+			# "\n\nOu por favor, envie o valor em rublos. Você pode descobrir a taxa de "
+			# "câmbio do dólar americano neste link:"
+			# " https: //investing.com/currencies/usd-rub"
 		},
 		"es": {
 			"ro_msg": "¡Puedes ayudar al bot con una donación!\n\n"
-			"Donar en [Patreon.com](%s)" % donate_link + \
-			"\n\nO Por favor envíe la"
-			" cantidad en rublos. Puede encontrar el tipo de cambio del dólar"
-			" estadounidense en este enlace:"
-			" https: //investing.com/currencies/usd-rub"
+			"Donar en [Patreon.com](%s)" % donate_link
+			# "Donar en [Patreon.com](%s)" % donate_link + \
+			# "\n\nO Por favor envíe la"
+			# " cantidad en rublos. Puede encontrar el tipo de cambio del dólar"
+			# " estadounidense en este enlace:"
+			# " https: //investing.com/currencies/usd-rub"
 		},
 		"de": {
 			"ro_msg": "Du kannst den Bot mit einer Spende unterstützen!\n\n"
-			"Spenden Sie für [Patreon.com](%s)" % donate_link + \
-			"\n\nAlternativ bitte sende den Betrag in Rubbeln als Nachricht. "
-			"Den aktuellen Wechselkurs für Euro findest Du hier:"
-			" https://www.investing.com/currencies/eur-rub"
+			"Spenden Sie für [Patreon.com](%s)" % donate_link
+			# "Spenden Sie für [Patreon.com](%s)" % donate_link + \
+			# "\n\nAlternativ bitte sende den Betrag in Rubbeln als Nachricht. "
+			# "Den aktuellen Wechselkurs für Euro findest Du hier:"
+			# " https://www.investing.com/currencies/eur-rub"
 		},
 		"he": {
 			"ro_msg": "אתה יכול לעזור לרובוט הזה ולתרום!\n\n"
-			"לתרום הלאה [Patreon.com](%s)" % donate_link + \
-			"\n\nאו אנא שלחו את הסכום ברובלים. אתה יכול לגלות את שער החליפין לדולר"
-			" בקישור הזה: https://investing.com/currencies/usd-rub"
+			"לתרום הלאה [Patreon.com](%s)" % donate_link
+			# "לתרום הלאה [Patreon.com](%s)" % donate_link + \
+			# "\n\nאו אנא שלחו את הסכום ברובלים. אתה יכול לגלות את שער החליפין לדולר"
+			# " בקישור הזה: https://investing.com/currencies/usd-rub"
 		}
 	},
 	"patreonShort": {
 		"en": {
-			"ro_msg": "[Patreon.com](%s)" % donate_link
+			"ro_msg": "[patreon.com/yourcastbot](%s)" % donate_link
 		}
 	},
 	"notANumber": {
