@@ -37,6 +37,26 @@ def get_message(message, lang_code, param=""):
 		except Exception:
 			return " "
 
+def get_message_rtd(message_route, lang_code):
+	lang_code = get_language(lang_code)
+	curr_route = None
+	msg = " "
+	if (len(message_route) > 0):
+		try:
+			for r in message_route:
+				if curr_route is None:
+					curr_route = routed_messages.get(r.lower())
+				else:
+					curr_route = curr_route.get(r.lower())
+			try:
+				msg = curr_route.get(lang_code)
+			except Exception:
+				msg = curr_route.get("en")
+		except AttributeError:
+			msg = str(message_route.pop())
+
+	return msg
+
 
 emojiCodes = {
 	'magnifier': '\U0001F50D',
@@ -2542,6 +2562,16 @@ messages = {
 		},
 		"he": {
 			"ro_msg": "הבוט בתחזוקה! אנא המתן."
+		}
+	}
+}
+
+
+routed_messages = {
+	"genres": {
+		"education": {
+			"ru": "Образование",
+			"en": "Education"
 		}
 	}
 }
