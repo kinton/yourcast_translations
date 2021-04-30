@@ -76,7 +76,16 @@ emojiCodes = {
 	'gold': '\U0001F947',
 	'gear': '\U00002699',
 	'link': '\U0001F517',
-	'goldenHeart': '\U0001F49B'
+	'goldenHeart': '\U0001F49B',
+	'brokenHeart': '\U0001F494',
+	'shootingStar': '\U0001F320',
+	'dizzy': '\U0001F4AB',
+	'star': '\U00002B50',
+	'glowingStar': '\U0001F31F',
+	'trophy': '\U0001F3C6',
+	'globeEuropeAfrica': '\U0001F30D',
+	'tongue': '\U0001F445',
+	'generalTop': '\U0001F51D',
 }
 
 
@@ -1170,7 +1179,34 @@ messages = {
 		"he": {
 			"ro_msg": emojiCodes.get('crown') + " " + "אולי תאהב את זה"
 		}
-
+	},
+	"podcastTop": {
+		"ru": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Топ подкастов" + \
+			" " + emojiCodes.get('globeEuropeAfrica')
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Top podcasts" + \
+			" " + emojiCodes.get('globeEuropeAfrica')
+		},
+	},
+	"podcastTopLang": {
+		"ru": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Языковой топ" + \
+			" " + emojiCodes.get('tongue')
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Language Top" + \
+			" " + emojiCodes.get('tongue')
+		},
+	},
+	"generalTop": {
+		"ru": {
+			"ro_msg": emojiCodes.get('generalTop') + " " + "Общий топ"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('generalTop') + " " + "General top"
+		}
 	},
 	"help": {
 		"ru": {
@@ -2549,6 +2585,22 @@ messages = {
 			"נסה לפתוח מאוחר יותר את הפדקאסט והפעל מחדש התראות."
 		}
 	},
+	"genresMessage": {
+		"ru": {
+			"ro_msg": emojiCodes.get('crown') + "\nВыберите жанр"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('crown') + "\nChoose genre"
+		},
+	},
+	"topMessage": {
+		"ru": {
+			"ro_msg": emojiCodes.get('crown') + "\nТоп жанра"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('crown') + "\nТоп жанра"
+		},
+	},
 	"maintenance": {
 		"ru": {
 			"ro_msg": "Бот на обслуживании! Попробуйте позже."
@@ -2563,7 +2615,7 @@ messages = {
 		"he": {
 			"ro_msg": "הבוט בתחזוקה! אנא המתן."
 		}
-	}
+	},
 }
 
 
