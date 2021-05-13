@@ -40,7 +40,7 @@ def get_message(message, lang_code, param=""):
 def get_message_rtd(message_route, lang_code):
 	lang_code = get_language(lang_code)
 	curr_route = None
-	msg = " "
+	msg = None
 	if (len(message_route) > 0):
 		try:
 			for r in message_route:
@@ -54,6 +54,9 @@ def get_message_rtd(message_route, lang_code):
 				msg = curr_route.get("en")
 		except AttributeError:
 			msg = str(message_route.pop())
+
+	if msg is None:
+		msg = ""
 
 	return msg
 
@@ -1278,27 +1281,32 @@ messages = {
 	"menuMessage": {
 		"ru": {
 			"ro_msg": "*Внимание! Автор бота не имеет отношения к "
-			"подкастам и их аудиозаписям.*\n\nВыберите действие из предложенных:"
+			"подкастам и их аудиозаписям и не несёт за них ответственность.*"
+			"\n\nВыберите действие из предложенных:"
 		},
 		"en": {
-			"ro_msg": "*Attention! The bot author is not related to podcasts"
-			" and their audio recordings.*\n\nPlease choose what you want to do:"
+			"ro_msg": "*Attention! The bot author is not related to podcasts "
+			"and their audio recordings and is not responsible for them.*"
+			"\n\nPlease choose what you want to do:"
 		},
 		"pt-BR": {
 			"ro_msg": "*Atenção! O autor do bot não está relacionado a podcasts e "
-			"suas gravações de áudio.*\n\nPor favor, escolha uma das opções a seguir:"
+			"suas gravações de áudio e não é responsável por eles.*"
+			"\n\nPor favor, escolha uma das opções a seguir:"
 		},
 		"es": {
 			"ro_msg": "*¡Atención! El autor del bot no está relacionado con los "
-			"podcasts y sus grabaciones de audio.*\n\n"
-			"Por favor, seleccione lo que quiere hacer:"
+			"podcasts y sus grabaciones de audio y no es responsable de ellos."
+			"*\n\nPor favor, seleccione lo que quiere hacer:"
 		},
 		"de": {
 			"ro_msg": "*Beachtung! Der Bot-Autor ist nicht mit Podcasts und deren "
-			"Audioaufnahmen verwandt.*\n\nBitte wähle eine der folgenden Möglichkeiten:"
+			"Audioaufnahmen verwandt und nicht dafür verantwortlich.*"
+			"\n\nBitte wähle eine der folgenden Möglichkeiten:"
 		},
 		"he": {
-			"ro_msg": "*תשומת הלב! כותב הבוט אינו קשור לפודקאסטים ולהקלטות השמע שלהם.*"
+			"ro_msg": "*תשומת הלב! מחבר הבוט אינו אחראי לפודקאסטים ולהקלטות השמע "
+			"שלהם ואינו אחראי עליהם.*"
 			"\n\nאנא בחר מה שברצונך לעשות:"
 		}
 
@@ -1677,10 +1685,10 @@ messages = {
 			" своих подписок. Здесь также можно ввести число и сразу перейти на данную"
 			" страницу.\n\n"
 			"Бот высылает новые выпуски автоматически, однако вы можете проверить"
-			" наличие новых записей вручную, нажав на \"Обновить\" в /menu. Кнопка "
-			"\"Интересные подкасты\" предложит вам познакомиться с новыми каналами.\n\n"
-			"Кроме всего этого бот поддерживает несколько команд, которые начинаются с"
-			" /, например /menu. Чтобы посмотреть их полный список, введите / в чате."
+			" наличие новых записей вручную, нажав на \"Обновить\" в /menu. Топы "
+			"предложат вам познакомиться с новыми популярными и качественными каналами."
+			"\n\nКроме этого, бот поддерживает несколько команд, которые начинаются "
+			"с /, например /menu. Чтобы посмотреть их полный список, введите / в чате."
 		},
 		"en": {
 			"ro_msg": "To find new podcasts, go to /menu and click on search."
@@ -1696,8 +1704,8 @@ messages = {
 			" directly to the corresponding page.\n\n"
 			"The bot sends new episodes automatically, but you can check for new"
 			" entries manually by clicking on \"Update\" in /menu."
-			" The \"Recommendations\" button will invite you to get acquainted with new"
-			" channels.\n\n"
+			" Tops will invite you to get acquainted with new popular and high-quality "
+			"channels.\n\n"
 			"Besides all this, the bot supports several commands that start with /,"
 			" for example /menu. To view the full list of commands,"
 			" enter / in the chat."
@@ -1715,10 +1723,10 @@ messages = {
 			" Nesta lista também é possível inserir um número e ir diretamente para"
 			" uma página.\n\n"
 			"O bot envia novos episódios automaticamente, mas você pode procurar por"
-			" novos manualmente tocando em \"Atualizar\". O botão \"Sugestões\" irá"
-			" sugerir alguns podcastas interessantes para começar.\n\n"
+			" novos manualmente tocando em \"Atualizar\". Tops irá convidá-lo a "
+			"conhecer novos canais populares e de alta qualidade.\n\n"
 			"Além disso, o bot suporta vários comandos que começam com /. Por exemplo"
-			" /menu. Para consultar a lista completa, digite / no chat..."
+			" /menu. Para consultar a lista completa, digite / no chat."
 		},
 		"es": {
 			"ro_msg": "Para encontrar nuevos podcasts, diríjase a /menu y presione"
@@ -1733,8 +1741,10 @@ messages = {
 			" ver su lista de suscripciones. Aquí también podrá entrar un número e ir"
 			" directamente a la página.\n\n"
 			"El bot envía episodios nuevos automáticamente, pero usted puede chequear"
-			" manualmente presionando \"Actualizar\"en /menu. El botón"
-			" \"Podcasts interesantes\" lo invitará a seguir nuevos canales.\n\n"
+			" manualmente presionando \"Actualizar\"en /menu. Tops lo invitará a "
+			"familiarizarse con nuevos canales populares y de alta calidad."
+			"\n\nAdemás, el bot admite varios comandos que comienzan con /, "
+			"por ejemplo / menu. Para ver su lista completa, escriba / en chat."
 		},
 		"de": {
 			"ro_msg": "Um neue Podcasts zu finden, gehe ins Hauptmenü und wähle die"
@@ -1750,8 +1760,8 @@ messages = {
 			" einer bestimmten Seite springen.\n\n"
 			"Der Bot verschickt neue Folgen automatisch, aber Du kannst auch von Hand"
 			" überprüfen, ob neue Einträge verfügbar sind, indem Du im /menu "
-			"„Aktualisieren” wählst. Der „Empfehlungen”-Button lädt Dich ein, neue"
-			" Podcasts kennenzulernen.\n\n"
+			"„Aktualisieren” wählst. Tops laden Sie ein, sich mit neuen beliebten und "
+			"hochwertigen Kanälen vertraut zu machen..\n\n"
 			"Darüber hinaus bietet der Bot eine Reihe an Befehlen, welche alle mit"
 			" / beginnen, /menu beispielsweise. Gib / ins Nachrichtenfeld ein, um eine"
 			" vollständige Liste zu sehen."
@@ -1768,9 +1778,8 @@ messages = {
 			" רשימת המנויים שלכם. כאן תוכלו גם להזין מספר וללכת"
 			" ישירות לעמוד זה.\n\n"
 			"הבוט שולח פרקים חדשים אוטומטית, אך אתה יכול לבדוק אם הם חדשים"
-			" על ידי כניסה ידנית עם לחיצה על \"Update\" ב /menu. כפתור ה \"Interesting"
-			" podcasts\" יזמין אותך להתוודע לחדשים"
-			" בערוצים.\n\n"
+			" על ידי כניסה ידנית עם לחיצה על \"Update\" ב /menu. צמרות יזמינו "
+			"אתכם להכיר ערוצים חדשים פופולריים ואיכותיים.\n\n"
 			"חוץ מזה, הרובוט תומך במספר פקודות שמתחילות ב /,"
 			" לדוגמה /menu. לצפיה ברשימת הפקודות המלאה, שלח `/` בצ'אט."
 		}
