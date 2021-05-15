@@ -1483,6 +1483,18 @@ messages = {
 			"ro_msg": "אין פרקים חדשים!"
 		}
 	},
+	"youHaveNewEpisodes": {
+		"ru": {
+			"ro_msg": "*У вас есть новые эпизоды!*\n\nПодпишитесь на бота /subscription"
+			" или пригласите пользователей, чтобы получить аудиозаписи.\n"
+			"Ваша реферальная ссылка:"
+		},
+		"en": {
+			"ro_msg": "*You have new episodes!*\n\n"
+			"Subscribe /subscribe to the bot or invite users to get audio records.\n"
+			"Your referral link:"
+		}
+	},
 	"noSubs": {
 		"ru": {
 			"ro_msg": "У вас нет подписок."
