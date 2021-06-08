@@ -2642,9 +2642,33 @@ messages = {
 
 routed_messages = {
 	"genres": {
+		"business": {
+			"ru": "Бизнес",
+			"en": "Business"
+		},
+		"сomedy": {
+			"ru": "Комедия",
+			"en": "Comedy"
+		},
 		"education": {
 			"ru": "Образование",
 			"en": "Education"
-		}
+		},
+		"investing": {
+			"ru": "Инвестиции",
+			"en": "Investing"
+		},
+		"language learning": {
+			"ru": "Изучение языков",
+			"en": "Language learning,"
+		},
+		"science": {
+			"ru": "Наука",
+			"en": "Science"
+		},
+		"technology": {
+			"ru": "Технологии",
+			"en": "Technology"
+		},
 	}
 }
