@@ -2660,7 +2660,11 @@ routed_messages = {
 		},
 		"language learning": {
 			"ru": "Изучение языков",
-			"en": "Language learning,"
+			"en": "Language learning"
+		},
+		"news": {
+			"ru": "Новости",
+			"en": "News"
 		},
 		"science": {
 			"ru": "Наука",
