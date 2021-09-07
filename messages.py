@@ -89,6 +89,7 @@ emojiCodes = {
 	'globeEuropeAfrica': '\U0001F30D',
 	'tongue': '\U0001F445',
 	'generalTop': '\U0001F51D',
+	'email': '\U0001F4E7',
 }
 
 
@@ -731,7 +732,14 @@ messages = {
 		"he": {
 			"ro_msg": "לוקח זמן להוריד, אנא המתן"
 		}
-
+	},
+	"updateInProgress": {
+		"ru": {
+			"ro_msg": "Обновление, пожалуйста, подождите"
+		},
+		"en": {
+			"ro_msg": "Update in progress, plese wait"
+		}
 	},
 	"tooBigRecord": {
 		"ru": {
@@ -1391,6 +1399,14 @@ messages = {
 		}
 
 	},
+	"proTipSendPageNumToGo": {
+		"ru": {
+			"ro_msg": "ProTip: отправьте номер страницы, чтобы перейти на неё"
+		},
+		"en": {
+			"ro_msg": "ProTip: send the page number to go to it"
+		},
+	},
 	"loading": {
 		"ru": {
 			"ro_msg": "Загрузка... Пожалуйста, подождите!"
@@ -1978,25 +1994,37 @@ messages = {
 	},
 	"donate_page_body": {
 		"ru": {
-			"ro_msg": "Данный функционал сейчас недоступен. Попробуйте поддержать на "
-			"[Patreon.com](%s)" % donate_link + ", а затем связаться с создателем."
+			"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота.\n"
+			"Существует несколько тарифов. Чтобы узнать подробнее и подписаться, "
+			"нажмите на кнопку \"Выбрать тариф\".\n\n"
+			"Чтобы подписка заработала, "
+			"зарегистрируйтесь на Patreon.com. Затем в этом меню бота нажмите на "
+			"кнопку \"Указать почту Patreon\" и пришлите боту почту, которую вы "
+			"использовали при регистрации на Patreon. Затем перейдите на "
+			+ "[%s](%s) " % (donate_link, donate_link)
+			+ "и пожертвуйте необходимую сумму."
+			"\n\nПроверка на подписку произойдёт автоматически, но вы также можете "
+			"нажать на кнопку \"Проверить Patreon\", чтобы сделать это вне очереди.\n\n"
+			"*Внимание! Подписка на Patreon и пополнение счёта считаются безвозмездным "
+			"пожертвованием! Валюта внутри бота — это баланс внутри сервиса, который "
+			"не считается деньгами.*"
 		},
 		"en": {
-			"ro_msg": "This functionality is currently unavailable. Try to support on "
-			"[Patreon.com](%s)" % donate_link + " and then contact the creator."
-		}
-		# "ru": {
-		# 	"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота.\n"
-		# 	"Существует несколько тарифов. Чтобы узнать подробнее и подписаться, "
-		# 	"нажмите на кнопку \"Выбрать тариф\".\nЧтобы внести деньги на счёт,"
-		# 	" нажмите на кноку \"Пополнить баланс\"."
-		# },
-		# "en": {
-		# 	"ro_msg": "Subscription allows you to access all the features of the bot.\n"
-		# 	"There are several tariffs. To learn more and subscribe,"
-		# 	"click on the \"Choose a tariff\" button.\nTo deposit money into your "
-		# 	"account, click on the \"Top up balance\" button."
-		# },
+			"ro_msg": "Subscription allows you to access all the features of the bot.\n"
+			"There are several tariffs. To learn more and subscribe,"
+			"click on the \"Choose a tariff\" button.\n\n"
+			"Register on Patreon.com to "
+			"activate your subscription. Then, in this bot menu, click on the "
+			"\"Specify Patreon Mail\" button and send to the bot the mail that you "
+			"used when registering on Patreon. Then go to "
+			+ "[%s](%s) " % (donate_link, donate_link)
+			+ "and donate the required amount."
+			"\n\nVerification for subscription will happen automatically, but you can "
+			"also click on the \"Check Patreon\" button to do it outside queue.\n\n"
+			"*Attention! Subscribing to Patreon and funding your account is considered "
+			"a donation! The currency inside the bot is the balance inside the "
+			"service, which is not considered money.*"
+		},
 		# "he": {
 		# 	"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
 		# 	"ישנם מספר מסלולים. למידע נוסף והרשמה,"
@@ -2009,6 +2037,82 @@ messages = {
 		# 	"drücke „Preisklasse wählen”!\nUm Dein Konto aufzuladen, "
 		# 	"drücke „Konto aufladen”!"
 		# }
+	},
+	"thisMonthHasAlreadyBeenReplenished": {
+		"ru": {
+			"ro_msg": "В этом месяце баланс уже был пополнен"
+		},
+		"en": {
+			"ro_msg": "Balance has already been replenished this month"
+		}
+	},
+	"noDataUpdatePatreon": {
+		"ru": {
+			"ro_msg": "Нет новых данных, проверьте почту и попробуйте позже"
+		},
+		"en": {
+			"ro_msg": "No new data, check your email and try again later"
+		}
+	},
+	"balanceFromPatreonAdded": {
+		"ru": {
+			"ro_msg": "Вам начислен баланс в качестве благодарности за подписку на "
+			"Patreon! Выберите тариф, используя команду /subscription. "
+			"Текущие условия:"
+		},
+		"en": {
+			"ro_msg": "You have been credited with a balance as a thank you for "
+			"subscribing to Patreon! Select tariff using command /subscription. "
+			"Current conditions:"
+		},
+	},
+	"tellPatreonEmail": {
+		"ru": {
+			"ro_msg": emojiCodes.get('email') + " Указать почту Patreon"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('email') + " Specify Patreon Mail"
+		}
+	},
+	"checkPatreonStatus": {
+		"ru": {
+			"ro_msg": emojiCodes.get('inboxTray') + " Проверить Patreon"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('inboxTray') + " Check Patreon"
+		}
+	},
+	"donate_page_email_input": {
+		"ru": {
+			"ro_msg": emojiCodes.get('email') + " Пришлите свой email"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('email') + " Send your email"
+		}
+	},
+	"current_email": {
+		"ru": {
+			"ro_msg": "Текущий email"
+		},
+		"en": {
+			"ro_msg": "Current email"
+		}
+	},
+	"email_saved": {
+		"ru": {
+			"ro_msg": "Email сохранён"
+		},
+		"en": {
+			"ro_msg": "Email saved"
+		}
+	},
+	"save_error": {
+		"ru": {
+			"ro_msg": "Ошибка сохранения"
+		},
+		"en": {
+			"ro_msg": "Save error"
+		}
 	},
 	"donate_page_referal": {
 		"ru": {
@@ -2448,6 +2552,26 @@ messages = {
 			"aufgeladen! Deine Preisklasse hat sich verbessert! Aktuelle Konditionen:"
 		}
 	},
+	"award_welcome": {
+		"ru": {
+			"ro_msg": "Добро пожаловать! В качестве приветственного бонуса попробуйте "
+			"лучший тариф! Текущие условия:"
+		},
+		"en": {
+			"ro_msg": "Welcome! Try the best tariff as a welcome bonus! "
+			"Current conditions:"
+		},
+	},
+	"secret_award_welcome": {
+		"ru": {
+			"ro_msg": "Добро пожаловать! Вы вернулись к началу! В качестве "
+			"награды попробуйте лучший тариф! Текущие условия:"
+		},
+		"en": {
+			"ro_msg": "Welcome! You are back to the beginning! Try the best tariff as "
+			"a reward! Current conditions:"
+		},
+	},
 	"donation": {
 		"ru": {
 			"ro_msg": emojiCodes.get('dollarBag') + " " + "Пожертвование"
@@ -2474,6 +2598,8 @@ messages = {
 			# "Отправьте сумму боту или пожертвуйте на"
 			"Пожертвуйте на"
 			" [Patreon.com](%s)" % donate_link
+			+ "\n\nЭто также даст вам дополнительные возможности, "
+			"подробнее: /subscription"
 		},
 		"en": {
 			"ro_msg": "You can support this bot with a donation!\n\n"
@@ -2482,6 +2608,7 @@ messages = {
 			# "\n\nOr send a message with the amount in rubles. "
 			# "You can see the exchange rate to the US dollar under this link:"
 			# " https://investing.com/currencies/usd-rub"
+			+ "\n\nIt will also give you additional options, learn more: /subscription"
 		},
 		"pt-BR": {
 			"ro_msg": "Você pode ajudar o bot com uma doação!\n\n"
@@ -2490,6 +2617,7 @@ messages = {
 			# "\n\nOu por favor, envie o valor em rublos. Você pode descobrir a taxa de "
 			# "câmbio do dólar americano neste link:"
 			# " https: //investing.com/currencies/usd-rub"
+			+ "\n\nEle também fornecerá opções adicionais, saiba mais: /subscription"
 		},
 		"es": {
 			"ro_msg": "¡Puedes ayudar al bot con una donación!\n\n"
@@ -2499,6 +2627,8 @@ messages = {
 			# " cantidad en rublos. Puede encontrar el tipo de cambio del dólar"
 			# " estadounidense en este enlace:"
 			# " https: //investing.com/currencies/usd-rub"
+			+ "\n\nTambién te brindará opciones adicionales, obtén más "
+			"información: /subscription"
 		},
 		"de": {
 			"ro_msg": "Du kannst den Bot mit einer Spende unterstützen!\n\n"
@@ -2507,6 +2637,8 @@ messages = {
 			# "\n\nAlternativ bitte sende den Betrag in Rubbeln als Nachricht. "
 			# "Den aktuellen Wechselkurs für Euro findest Du hier:"
 			# " https://www.investing.com/currencies/eur-rub"
+			+ "\n\nEs gibt Ihnen auch zusätzliche Optionen, erfahren Sie "
+			"mehr: /subscription"
 		},
 		"he": {
 			"ro_msg": "אתה יכול לעזור לרובוט הזה ולתרום!\n\n"
@@ -2514,11 +2646,12 @@ messages = {
 			# "לתרום הלאה [Patreon.com](%s)" % donate_link + \
 			# "\n\nאו אנא שלחו את הסכום ברובלים. אתה יכול לגלות את שער החליפין לדולר"
 			# " בקישור הזה: https://investing.com/currencies/usd-rub"
+			+ "\n\nזה גם ייתן לך אפשרויות נוספות, למידע נוסף: /subscription"
 		}
 	},
 	"patreonShort": {
 		"en": {
-			"ro_msg": "[patreon.com/yourcastbot](%s)" % donate_link
+			"ro_msg": "[%s](%s)" % (donate_link, donate_link)
 		}
 	},
 	"notANumber": {
@@ -2646,7 +2779,7 @@ routed_messages = {
 			"ru": "Бизнес",
 			"en": "Business"
 		},
-		"сomedy": {
+		"comedy": {
 			"ru": "Комедия",
 			"en": "Comedy"
 		},
@@ -2654,25 +2787,73 @@ routed_messages = {
 			"ru": "Образование",
 			"en": "Education"
 		},
+		"health & fitness": {
+			"ru": "Здоровье и фитнес",
+			"en": "Health & fitness"
+		},
 		"investing": {
 			"ru": "Инвестиции",
 			"en": "Investing"
 		},
 		"language learning": {
 			"ru": "Изучение языков",
-			"en": "Language learning"
+			"en": "Language learning,"
+		},
+		"leisure": {
+			"ru": "Досуг",
+			"en": "Leisure"
+		},
+		"life sciences": {
+			"ru": "Естественные науки",
+			"en": "Life sciences"
+		},
+		"mental health": {
+			"ru": "Mental health",
+			"en": "Душевное здоровье"
+		},
+		"natural sciences": {
+			"ru": "Eстественные науки",
+			"en": "Natural sciences"
 		},
 		"news": {
 			"ru": "Новости",
 			"en": "News"
 		},
+		"medicine": {
+			"ru": "Медицина",
+			"en": "Medicine"
+		},
+		"running": {
+			"ru": "Бег",
+			"en": "Running"
+		},
 		"science": {
 			"ru": "Наука",
 			"en": "Science"
 		},
+		"self-improvement": {
+			"ru": "Самосовершенствование",
+			"en": "Self-improvement"
+		},
+		"society & culture": {
+			"ru": "Общество и культура",
+			"en": "Society & culture"
+		},
+		"sports": {
+			"ru": "Спорт",
+			"en": "Sports"
+		},
+		"tech news": {
+			"ru": "Технические новости",
+			"en": "Tech news"
+		},
 		"technology": {
 			"ru": "Технологии",
 			"en": "Technology"
+		},
+		"true crime": {
+			"ru": "Настоящее преступление",
+			"en": "True crime"
 		},
 	}
 }
