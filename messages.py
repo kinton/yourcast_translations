@@ -35,7 +35,7 @@ def get_message(message, lang_code, param=""):
 		try:
 			return messages.get(message).get("en").get("ro_msg")
 		except Exception:
-			return " "
+			return message
 
 def get_message_rtd(message_route, lang_code):
 	lang_code = get_language(lang_code)
@@ -90,10 +90,30 @@ emojiCodes = {
 	'tongue': '\U0001F445',
 	'generalTop': '\U0001F51D',
 	'email': '\U0001F4E7',
+	'whiteHeavyCheckMark': '\U00002705',
+	'crossMark': '\U0000274C',
+	'warning': '\U000026A0',
+	'exclamationMark': '\U00002757',
+	'electricPlug': '\U0001F50C',
+	'new': '\U0001F195',
+	# 'redCircle': '\U0001F534',
+}
+
+
+standartSymbols = {
+	"newItem": emojiCodes.get("new", "New")
 }
 
 
 messages = {
+	"or": {
+		"ru": {
+			"ro_msg": "или"
+		},
+		"en": {
+			"ro_msg": "or"
+		},
+	},
 	"welcomeMessage": {
 		"ru": {
 			"ro_msg": "*Добро пожаловать!*\n"
@@ -161,6 +181,22 @@ messages = {
 			"ro_msg": emojiCodes.get('crown') + "\n" + "ערוצים פופולריים:"
 		}
 
+	},
+	"weAlsoSignedYouOnPodcastName": {
+		"ru": {
+			"ro_msg": "Мы также подписали вас на [%s](t.me/%s?start=podcast_%s)"
+		},
+		"en": {
+			"ro_msg": "We also signed you up to [%s](t.me/%s?start=podcast_%s)"
+		},
+	},
+	"dontForgetToVisitStart": {
+		"ru": {
+			"ro_msg": "Не забудьте посетить начальную страницу /start"
+		},
+		"en": {
+			"ro_msg": "Don't forget to visit the start page /start"
+		},
 	},
 	"pressMe": {
 		"ru": {
@@ -641,26 +677,34 @@ messages = {
 	},
 	"parsingError": {
 		"ru": {
-			"ro_msg": "Ошибка в получении информации о подкасте."
+			"ro_msg": "Ошибка в получении информации."
 		},
 		"en": {
-			"ro_msg": "Sorry, an error occured when receiving podcast info."
+			"ro_msg": "Sorry, an error occured when receiving info."
 		},
 		"pt-BR": {
 			"ro_msg": "Desculpe. Encontramos erro no recebimento das"
-			" informações do podcast."
+			" informações."
 		},
 		"es": {
 			"ro_msg": "Lo sentinos, ocurrieron errores al recibir la"
-			" información del podcast."
+			" información."
 		},
 		"de": {
-			"ro_msg": "Fehler beim Abrufen der Podcast-Informationen."
+			"ro_msg": "Fehler beim Abrufen der Informationen."
 			" Bitte entschuldige!"
 		},
 		"he": {
-			"ro_msg": "מצטערים, אירעו שגיאות בקבלת המידע על הפודקאסט."
+			"ro_msg": "מצטערים, אירעו שגיאות בקבלת המידע."
 		}
+	},
+	"amountTooSmall": {
+		"ru": {
+			"ro_msg": "Значение слишком маленькое"
+		},
+		"en": {
+			"ro_msg": "The amount is too small"
+		},
 	},
 	"notFoundOrFuture": {
 		"ru": {
@@ -874,6 +918,14 @@ messages = {
 		},
 		"he": {
 			"ro_msg": emojiCodes.get('magnifier') + " " + "חפש"
+		}
+	},
+	"channelConnect": {
+		"ru": {
+			"ro_msg": emojiCodes.get('electricPlug') + " " + "Подключённые каналы"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('electricPlug') + " " + "Connected channels"
 		}
 	},
 	"add_by_rss": {
@@ -1203,12 +1255,10 @@ messages = {
 	},
 	"podcastTopLang": {
 		"ru": {
-			"ro_msg": emojiCodes.get('crown') + " " + "Языковой топ" + \
-			" " + emojiCodes.get('tongue')
+			"ro_msg": emojiCodes.get('crown') + " " + "Локальный топ"
 		},
 		"en": {
-			"ro_msg": emojiCodes.get('crown') + " " + "Language Top" + \
-			" " + emojiCodes.get('tongue')
+			"ro_msg": emojiCodes.get('crown') + " " + "Local Top"
 		},
 	},
 	"generalTop": {
@@ -1216,7 +1266,7 @@ messages = {
 			"ro_msg": emojiCodes.get('generalTop') + " " + "Общий топ"
 		},
 		"en": {
-			"ro_msg": emojiCodes.get('generalTop') + " " + "General top"
+			"ro_msg": emojiCodes.get('generalTop') + " " + "Global top"
 		}
 	},
 	"help": {
@@ -1509,6 +1559,14 @@ messages = {
 			"ro_msg": "*You have new episodes!*\n\n"
 			"Subscribe /subscribe to the bot or invite users to get audio records.\n"
 			"Your referral link:"
+		}
+	},
+	"youHaveNewEpisodesShort": {
+		"ru": {
+			"ro_msg": "*У вас есть новые эпизоды!*"
+		},
+		"en": {
+			"ro_msg": "*You have new episodes!*"
 		}
 	},
 	"noSubs": {
@@ -1813,9 +1871,7 @@ messages = {
 		}
 	},
 	"yes": {
-		"ru": {
-			"ro_msg": "Да"
-		},
+		"ru": {"ro_msg": "Да"},
 		"en": {"ro_msg": "Yes"},
 		"pt-BR": {"ro_msg": "Sim"},
 		"es": {"ro_msg": "Sí"},
@@ -1823,9 +1879,7 @@ messages = {
 		"he": {"ro_msg": "כן"}
 	},
 	"no": {
-		"ru": {
-			"ro_msg": "Нет"
-		},
+		"ru": {"ro_msg": "Нет"},
 		"en": {"ro_msg": "No"},
 		"pt-BR": {"ro_msg": "Não"},
 		"es": {"ro_msg": "No"},
@@ -1992,38 +2046,34 @@ messages = {
 			"ro_msg": emojiCodes.get('creditCard') + " Bot-Abonnement"
 		}
 	},
-	"donate_page_body": {
+	"pay": {
 		"ru": {
-			"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота.\n"
-			"Существует несколько тарифов. Чтобы узнать подробнее и подписаться, "
-			"нажмите на кнопку \"Выбрать тариф\".\n\n"
-			"Чтобы подписка заработала, "
-			"зарегистрируйтесь на Patreon.com. Затем в этом меню бота нажмите на "
-			"кнопку \"Указать почту Patreon\" и пришлите боту почту, которую вы "
-			"использовали при регистрации на Patreon. Затем перейдите на "
-			+ "[%s](%s) " % (donate_link, donate_link)
-			+ "и пожертвуйте необходимую сумму."
-			"\n\nПроверка на подписку произойдёт автоматически, но вы также можете "
-			"нажать на кнопку \"Проверить Patreon\", чтобы сделать это вне очереди.\n\n"
-			"*Внимание! Подписка на Patreon и пополнение счёта считаются безвозмездным "
-			"пожертвованием! Валюта внутри бота — это баланс внутри сервиса, который "
-			"не считается деньгами.*"
+			"ro_msg": emojiCodes.get('moneyWithWings') + " Оплатить"
 		},
 		"en": {
-			"ro_msg": "Subscription allows you to access all the features of the bot.\n"
-			"There are several tariffs. To learn more and subscribe,"
-			"click on the \"Choose a tariff\" button.\n\n"
-			"Register on Patreon.com to "
-			"activate your subscription. Then, in this bot menu, click on the "
-			"\"Specify Patreon Mail\" button and send to the bot the mail that you "
-			"used when registering on Patreon. Then go to "
-			+ "[%s](%s) " % (donate_link, donate_link)
-			+ "and donate the required amount."
-			"\n\nVerification for subscription will happen automatically, but you can "
-			"also click on the \"Check Patreon\" button to do it outside queue.\n\n"
-			"*Attention! Subscribing to Patreon and funding your account is considered "
-			"a donation! The currency inside the bot is the balance inside the "
-			"service, which is not considered money.*"
+			"ro_msg": emojiCodes.get('moneyWithWings') + " Pay"
+		}
+	},
+	"donate_page_body": {
+		"ru": {
+			"ro_msg": "Подписка позволяет получить доступ ко всем возможностям бота\n\n"
+			"Существует несколько тарифов. Ознакомьтесь с ними, нажав на кнопку "
+			"\"Выбрать тариф\".\n\n"
+			"*Внимание! Любое пополнение счёта считаются безвозмездным "
+			"пожертвованием!* "
+			"Доллары в системе — это выдающиеся за пожертвования виртуальные очки, "
+			"которые не считаются деньгами, а их курс равен доллару США (USD), "
+			"при этом они принадлежат владельцу бота, а не пользователям. "
+		},
+		"en": {
+			"ro_msg": "Subscription allows you to access all the features\n\n"
+			"There are several tariffs. Check them out by clicking on the button "
+			"\"Choose a tariff\" button.\n\n"
+			"*Attention! Any replenishment of the account is considered "
+			"a donation!* Dollars in the system are virtual points "
+			"awarded for donations, they are not considered money, "
+			"and their exchange rate is equal to the US dollar, "
+			"while they belong to the bot owner, not to users."
 		},
 		# "he": {
 		# 	"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
@@ -2037,6 +2087,81 @@ messages = {
 		# 	"drücke „Preisklasse wählen”!\nUm Dein Konto aufzuladen, "
 		# 	"drücke „Konto aufladen”!"
 		# }
+	},
+	"payViaCryptoBot": {
+		"ru": {
+			"ro_msg": "Пополнить с помощью Crypto Bot"
+		},
+		"en": {
+			"ro_msg": "Top up balance via Crypto Bot"
+		}
+	},
+	"bot_sub_cryptobot_page_body": {
+		"ru": {
+			"ro_msg": "Выберите криптовалюту, которая есть "
+			"на вашем счёте Crypto Bot\n\n"
+			"Подробнее: @cryptobot"
+		},
+		"en": {
+			"ro_msg": "Select the cryptocurrency that you have "
+			"on your Crypto Bot account\n\n"
+			"More details: @cryptobot"
+		}
+	},
+	"bot_sub_cryptobot_amount_input": {
+		"ru": {
+			"ro_msg": "Введите значение, на которое вы хотите пополнить ваш баланс "
+			"внутри бота в долларах (USD)" + emojiCodes.get('dollar')
+		},
+		"en": {
+			"ro_msg": "Enter the value you want to top up your bot balance "
+			"in USD " + emojiCodes.get('dollar') + "(dollars)"
+		}
+	},
+	"cryptobot_generated_link_page": {
+		"ru": {
+			"ro_msg": "Вы собираетесь пополнить баланс бота на {summa}"
+			+ emojiCodes.get('dollar') + "(долларов) с помощью "
+			"{assetAmount} {asset}\n\n"
+			"Обменный курс: 1 {asset} = {exchangeRateUSD}$ (долларов)\n\n"
+			"Нажмите на ссылку, чтобы произвести оплату: {paymentLink}"
+		},
+		"en": {
+			"ro_msg": "You are going to top up the bot balance by {summa}"
+			+ emojiCodes.get('dollar') + "(dollars) using "
+			"{assetAmount} {asset}\n\n"
+			"Exchange rate: 1 {asset} = {exchangeRateUSD}$ (dollars)"
+		}
+	},
+	"payViaPatreon": {
+		"ru": {
+			"ro_msg": "Подписаться с помощью Patreon"
+		},
+		"en": {
+			"ro_msg": "Subscribe via Patreon"
+		}
+	},
+	"patreon_page_body": {
+		"ru": {
+			"ro_msg": "Чтобы подписка заработала, "
+			"зарегистрируйтесь на Patreon.com. Затем в этом меню бота нажмите на "
+			"кнопку \"Указать почту Patreon\" и пришлите боту почту, которую вы "
+			"использовали при регистрации на Patreon. Затем перейдите на "
+			+ "[%s](%s) " % (donate_link, donate_link)
+			+ "и пожертвуйте необходимую сумму."
+			"\n\nПроверка на подписку произойдёт автоматически, но вы также можете "
+			"нажать на кнопку \"Проверить Patreon\", чтобы сделать это вне очереди."
+		},
+		"en": {
+			"ro_msg": "Register on Patreon.com to "
+			"activate your subscription. Then, in this bot menu, click on the "
+			"\"Specify Patreon Mail\" button and send to the bot the mail that you "
+			"used when registering on Patreon. Then go to "
+			+ "[%s](%s) " % (donate_link, donate_link)
+			+ "and donate the required amount."
+			"\n\nVerification for subscription will happen automatically, but you can "
+			"also click on the \"Check Patreon\" button to do it outside queue."
+		}
 	},
 	"thisMonthHasAlreadyBeenReplenished": {
 		"ru": {
@@ -2289,17 +2414,20 @@ messages = {
 			"ro_msg": "Стоимость: %s" + emojiCodes.get('dollar') \
 			+ "(долларов) за 30 дней.\nУведомлений (за период, 30 дней): %s\n"
 			# "Поддержка сжатия: (недоступно на данный момент) %s"
+			"Управление каналом: %s"
 		},
 		"en": {
 			"ro_msg": "Cost: %s" + emojiCodes.get('dollar') \
 			+ "(dollars) for 30 days.\nNotifications (for a period of 30 days): %s\n"
 			# "Compression support: (not available at the moment) %s"
+			"Channel management: %s"
 		},
 		"de": {
 			"ro_msg": "Kosten: %s" + emojiCodes.get('dollar') \
 			+ "(in Dollar) für 30 Tage.\nBenachrichtigungen (über eine Laufzeit von 30"
 			" Tagen): %s\n"
 			# "Compression support: (not available at the moment) %s"
+			"Kanalverwaltung: %s"
 		}
 	},
 	"days_left": {
@@ -2364,8 +2492,9 @@ messages = {
 			"Здесь вы можете пополнить баланс. Для получения ссылки можно нажать"
 			" на кнопку или *ввести сумму вручную*.\n\n"
 			"*Внимание! Пополнение счёта также считается безвозмездным пожертвованием!*"
-			" Доллары в системе — это виртуальные очки, выдающиеся за пожертвования"
-			", при этом они принадлежат владельцем бота, а не пользователям. "
+			" Доллары в системе — это выдающиеся за пожертвования виртуальные очки, "
+			"курс которых равен доллару США (USD), "
+			"при этом они принадлежат владельцу бота. "
 			"Администрация и владелец бота не несут ответственность за пожертвованные "
 			"деньги, баланс в системе и виртуальные очки. Выбранный пользователем тариф"
 			" может быть отменён, а баланс аннулирован в любое время без объяснения "
@@ -2377,8 +2506,9 @@ messages = {
 			"Here you can top up your balance. For a link you can click"
 			" on the button or *enter the amount manually*.\n\n"
 			"*Attention! Account funding is also considered a donation!*"
-			" Dollars in the system are virtual points awarded for donations "
-			"and they are owned by the bot owner, not the users."
+			" Dollars in the system are virtual points awarded for donations, "
+			"the exchange rate of which is equal to the US dollar, "
+			"and they are owned by the bot owner."
 			"The administration and the owner of the bot are not responsible for "
 			"donated money, balance in the system and virtual points. The tariff chosen"
 			" by the user can be canceled and the balance canceled at any time without "
@@ -2390,9 +2520,9 @@ messages = {
 			"Hier kannst Du Dein Konto aufladen. Durch Drücken auf den Knopf "
 			"oder *manuelle Eingabe eines Betrags* erhälst Du einen Link.\n\n"
 			"*Beachte: Deinen Kontostand aufzuladen wird auch als Spende betrachtet.*"
-			" Jegliches Geld (in Dollar) im System entspricht virtuellen Token, "
-			"welche für Spenden gutgeschrieben werden. Sie sind Eigentum des "
-			"Bot-Betreibers und nicht des Nutzers. "
+			" Dollar im System sind virtuelle Punkte, die für Spenden vergeben werden, "
+			"deren Wechselkurs dem US-Dollar entspricht, und sie gehören dem "
+			"Bot-Besitzer."
 			"Weder die Betreiber noch der Besitzer des Bots sind verantwortlich für "
 			"gespendetes Geld, Kontostände im System, und virtuelle Token. Die "
 			"vom Nutzer gewählte Preisklasse und dessen Kontostand können jederzeit und"
@@ -2654,6 +2784,28 @@ messages = {
 			"ro_msg": "[%s](%s)" % (donate_link, donate_link)
 		}
 	},
+	"linkInTheBotByPodcastId": {
+		"ru": {
+			"ro_msg": "[Открыть подкаст](t.me/{botName}?start=podcast_{id}) "
+			"в @{botName}"
+		},
+		"en": {
+			"ro_msg": "[Open the podcast](t.me/{botName}?start=podcast_{id}) "
+			"with @{botName}"
+		}
+	},
+	"linkInTheBotByPodcastId_HTML": {
+		"ru": {
+			"ro_msg":
+			"<a href=\"t.me/{botName}?start=podcast_{id}\">Открыть подкаст</a> "
+			"в @{botName}"
+		},
+		"en": {
+			"ro_msg":
+			"<a href=\"t.me/{botName}?start=podcast_{id}\">Open the podcast</a> "
+			"with @{botName}"
+		}
+	},
 	"notANumber": {
 		"ru": {
 			"ro_msg": "Пожалуйста, введите сумму."
@@ -2755,6 +2907,166 @@ messages = {
 			"ro_msg": emojiCodes.get('crown') + "\nТоп жанра"
 		},
 	},
+
+	"connectTgChannelMessage": {
+		"ru": {
+			"ro_msg": emojiCodes.get('electricPlug') + "*Подключённые каналы*\n\n"
+			"Вы можете добавить канал Telegram, выбрать подкасты, а бот будет "
+			"автоматически присылать в него новые выпуски!\n\n"
+			"Позвольте боту вести канал о подкастах вместо вас!"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('electricPlug') + "*Connected channels*\n\n"
+			"You can add a Telegram channel, select podcasts, and the bot will "
+			"automatically send new episodes to it!\n\n"
+			"Let the bot manage the podcast channel for you!"
+		},
+	},
+	"cantConnectTgChannelMessage": {
+		"ru": {
+			"ro_msg": "*Чтобы добавить канал, ваш тариф должен быть уровня %s.*\n"
+			"Ваш текущий тариф: %s.\n\nПодробнее: /subscription"
+		},
+		"en": {
+			"ro_msg": "*To add a channel, your tariff must be level %s.*\n"
+			"Your current tariff: %s.\n\nMore info: /subscription"
+		}
+	},
+	"myTgChannels": {
+		"ru": {
+			"ro_msg": "Мои каналы"
+		},
+		"en": {
+			"ro_msg": "My channels"
+		}
+	},
+	"addTgChannel": {
+		"ru": {
+			"ro_msg": "Добавить канал"
+		},
+		"en": {
+			"ro_msg": "Add channel"
+		}
+	},
+	"addTgChannelInput": {
+		"ru": {
+			"ro_msg": "Сделайте бота администратором вашего канала. "
+			"Затем введите id канала, оно начинается с минуса, или перешлите "
+			"боту любое сообщение канала"
+		},
+		"en": {
+			"ro_msg": "Make this bot the administrator of your channel. "
+			"Then enter the channel id, it starts with a minus, or send "
+			"the bot any channel message"
+		}
+	},
+	"tgChannelNotFoundEnsureBotAdmin": {
+		"ru": {
+			"ro_msg": "Канал не найден. "
+			"Убедитесь, что вы добавили бота в качестве администратора"
+		},
+		"en": {
+			"ro_msg": "Channel not found. "
+			"Make sure you have added the bot as an administrator"
+		}
+	},
+	"tgChannelNotFoundEnsureBotAdminWithName": {
+		"ru": {
+			"ro_msg": "Канал *%s* не найден. "
+			"Убедитесь, что вы добавили бота в качестве администратора.\n\n"
+			"Подробнее: /my\\_tg\\_channels"
+		},
+		"en": {
+			"ro_msg": "Channel *%s* not found. "
+			"Make sure you have added the bot as an administrator.\n\n"
+			"More info: /my\\_tg\\_channels"
+		}
+	},
+	"tgChannelAlreadyAdded": {
+		"ru": {
+			"ro_msg": "Канал уже добавлен"
+		},
+		"en": {
+			"ro_msg": "The channel already added"
+		}
+	},
+	"tgChannelAdded": {
+		"ru": {
+			"ro_msg": "Канал успешно добавлен!"
+		},
+		"en": {
+			"ro_msg": "The channel has been successfully added"
+		}
+	},
+	"yourTgChannelList": {
+		"ru": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"Список каналов, которые вы добавили"
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"List of channels you have added"
+		}
+	},
+	"yourTgChannel": {
+		"ru": {
+			"ro_msg": "Управление добавленным каналом"
+		},
+		"en": {
+			"ro_msg": "Manage the added channel"
+		}
+	},
+	"tgChannelStatus": {
+		"ru": {
+			"ro_msg": "Состояние"
+		},
+		"en": {
+			"ro_msg": "Status"
+		}
+	},
+	"tgChannelSubs": {
+		"ru": {
+			"ro_msg": "Подкасты"
+		},
+		"en": {
+			"ro_msg": "Podcasts"
+		}
+	},
+	"tgChannelDelete": {
+		"ru": {
+			"ro_msg": "Удалить канал"
+		},
+		"en": {
+			"ro_msg": "Delete channel"
+		}
+	},
+	"tapAgainToDeleteTgChannel": {
+		"ru": {
+			"ro_msg": "Нажмите ещё раз, чтобы подтвердить удаление"
+		},
+		"en": {
+			"ro_msg": "Press again to confirm deletion"
+		}
+	},
+	"yourTgChannelSubList": {
+		"ru": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"Нажмите на подкаст, чтобы бот начал отслеживать его новые "
+			"выпуски и присылать в канал. Нажмите ещё раз, чтобы отменить.\n"
+			"Внимание, если вы отпишитесь от подаста, открыв его, например, "
+			"через команду /subscriptions, то его связь с Telegram "
+			"каналом также исчезнет."
+		},
+		"en": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"Click on the podcast to have the bot start tracking its new "
+			"releases and send them to the channel. Tap again to cancel."
+			"Note that if you unsubscribe from a podcast by opening it, for "
+			"example via the command /subscriptions, its connection to the Telegram "
+			"channel will also disappear."
+		}
+	},
+
 	"maintenance": {
 		"ru": {
 			"ro_msg": "Бот на обслуживании! Попробуйте позже."
@@ -2775,6 +3087,10 @@ messages = {
 
 routed_messages = {
 	"genres": {
+		"arts": {
+			"ru": "Искусства",
+			"en": "Arts"
+		},
 		"business": {
 			"ru": "Бизнес",
 			"en": "Business"
@@ -2822,6 +3138,14 @@ routed_messages = {
 		"medicine": {
 			"ru": "Медицина",
 			"en": "Medicine"
+		},
+		"politics": {
+			"ru": "Политика",
+			"en": "Politics"
+		},
+		"religion & spirituality": {
+			"ru": "Религия и духовность",
+			"en": "Religion & spirituality"
 		},
 		"running": {
 			"ru": "Бег",
