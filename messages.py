@@ -799,7 +799,7 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Update in progress, plese wait"
-		}
+		},
 		"pt-BR": {
 			"ro_msg": "Atualização em andamento, por favor aguarde"
 		}
@@ -945,7 +945,7 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('electricPlug') + " " + "Connected channels"
-		}
+		},
 		"pt-BR": {
 			"ro_msg": emojiCodes.get('electricPlug') + " " + "Canais conectados"
 		}
@@ -1090,11 +1090,10 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Next episode"
-		}
+		},
 		"pt-BR": {
 			"ro_msg": "Próximo episódio"
 		}
-
 	},
 	"settings": {
 		"ru": {
@@ -1299,7 +1298,7 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('generalTop') + " " + "Global top"
-		}
+		},
 		"pt-BR": {
 			"ro_msg": emojiCodes.get('generalTop') + " " + "Top global"
 		}
@@ -1599,8 +1598,8 @@ messages = {
 			"Your referral link:"
 		},
 		"pt-BR": {
-			"ro_msg": "*Você tem novos episódios!*\n\nInscreva-se no bot enviando /subscription"
-			" ou convide usuários para receber arquivos de áudio.\n"
+			"ro_msg": "*Você tem novos episódios!*\n\nInscreva-se no bot enviando "
+			"/subscription ou convide usuários para receber arquivos de áudio.\n"
 			"Seu link de convite:"
 		}
 	},
@@ -1780,11 +1779,11 @@ messages = {
 			" definition was given by Evgeny Myatin)."
 		},
 		"pt-BR": {
-			"ro_msg": "O termo 'podcast' veio da união das palavras 'iPod' e 'broadcast'. É o processo de criação e"
-			" distribuição de arquivos de áudio ou vídeo (os podcasts) no estilo de"
-			" transmissões de rádio e televisão na Internet. Como regra, os podcasts"
-			" têm um certo tema e frequência de publicação (definição dada"
-			" por Evgeny Myatin)."
+			"ro_msg": "O termo 'podcast' veio da união das palavras 'iPod' e "
+			" 'broadcast'. É o processo de criação e distribuição de arquivos de áudio "
+			"ou vídeo (os podcasts) no estilo de transmissões de rádio e televisão na "
+			"Internet. Como regra, os podcasts têm um certo tema e frequência de "
+			"publicação (definição dada por Evgeny Myatin)."
 		},
 		"es": {
 			"ro_msg": "Podcast (de iPod y broadcast) es el proceso de crear y"
@@ -1999,7 +1998,7 @@ messages = {
 		"de": {
 			"ro_msg": "Du bist bereits in dieser Preisklasse."
 		},
-		"de": {
+		"he": {
 			"ro_msg": "אתה מנוי כבר למסלול זה."
 		},
 		"pt-BR": {
@@ -2301,7 +2300,8 @@ messages = {
 			"ro_msg": "No new data, check your email and try again later"
 		},
 		"pt-BR": {
-			"ro_msg": "Sem novos dados, verifique seu e-mail e tente novamente mais tarde"
+			"ro_msg": "Sem novos dados, verifique seu e-mail e tente novamente mais "
+			"tarde"
 		}
 	},
 	"balanceFromPatreonAdded": {
@@ -2402,20 +2402,20 @@ messages = {
 			"ro_msg": "Bring friends and get bonuses! If a person follows your link"
 			", you will get additional" + str(
 				int(tariff_ref_period / 24)) + " days and " + str(tariff_ref_notifies) \
-			+ " notifications to the current tariff or, if you are not subscribed," \
+			+ " notifications to the current tariff or, if you are not subscribed, " \
 			+ str(int(tariff_ref_no_subscription_period / 24)) + " days of subscription"
 			" for minimum tariff. If a person refills the balance using your link, then"
 			" your tariff will be changed to the maximum, and its term will increase "
 			"by " + str(int(tariff_ref_sub_period / 24)) + " days."
 		},
 		"pt-BR": {
-			"ro_msg": "Traga amigos e ganhe bônus!  Se uma pessoa usar seu link de convite"
-			", você irá receber adicionar mais" + str(
+			"ro_msg": "Traga amigos e ganhe bônus!  Se uma pessoa usar seu link de "
+			"convite, você irá receber adicionar mais" + str(
 				int(tariff_ref_period / 24)) + " dias e " + str(tariff_ref_notifies) \
-			+ " notificações ao plano atual. Ou, caso não tenha uma assinatura, receberá" \
-			+ str(int(tariff_ref_no_subscription_period / 24)) + " dias de assinatura"
-			" do plano mínimo. Se uma pessoa fizer uma recarga usando seu link, então"
-			" você receberá o plano máximo, e seu prazo aumentará "
+			+ " notificações ao plano atual. Ou, caso não tenha uma assinatura, "
+			"receberá " + str(int(tariff_ref_no_subscription_period / 24)) + " dias de "
+			"assinatura do plano mínimo. Se uma pessoa fizer uma recarga usando seu "
+			"link, então você receberá o plano máximo, e seu prazo aumentará "
 			"em " + str(int(tariff_ref_sub_period / 24)) + " dias."
 		},
 		"he": {
@@ -2531,9 +2531,9 @@ messages = {
 			"ro_msg": "*" + emojiCodes.get('clipboard') + " Planos*\n\n"
 			"Aqui você pode escolher um plano. Por favor, leia atentamente"
 			" as opções disponíveis e, a seguir, clique no botão do plano "
-			"escolhido.\n\nO plano somente será ativado quando você realizar uma recarga na conta."
-			"*Atenção! Qualquer recarga na conta será considerada uma doação!*"
-			"\n\nSe você decidir mudar para um plano mais caro, parte do "
+			"escolhido.\n\nO plano somente será ativado quando você realizar uma "
+			"recarga na conta. *Atenção! Qualquer recarga na conta será considerada uma"
+			" doação!* \n\nSe você decidir mudar para um plano mais caro, parte do "
 			"diferença entre os planos para os dias restantes será debitado "
 			"imediatamente.\n*Mas, se decidir mudar para um mais barato, o saldo "
 			"será aumentado pela metade do valor para os dias restantes, exceto "
@@ -2678,7 +2678,8 @@ messages = {
 			"ro_msg": "(not enough for renewal: %s" + emojiCodes.get('dollar') + ")"
 		},
 		"pt-BR": {
-			"ro_msg": "(insuficiente para renovação: %s" + emojiCodes.get('dollar') + ")"
+			"ro_msg": "(insuficiente para renovação: %s" + emojiCodes.get('dollar') \
+			+ ")"
 		},
 		"de": {
 			"ro_msg": "(nicht genug für eine Erneuerung: %s" + \
@@ -2730,17 +2731,17 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": "*" + emojiCodes.get('moneyWithWings') + " Recarga*\n\n"
-			"Aqui pode completar o seu saldo. Para um link pode clicar".
+			"Aqui pode completar o seu saldo. Para um link pode clicar"
 			" no botão ou *enter o montante manualmente*.\n\n"
 			"*Atenção! O crédito de conta é também considerado uma doação!*"
 			" Os dólares no sistema são pontos virtuais atribuídos por doações, "
-			"cuja taxa de câmbio é igual ao dólar, ".
-			"e são propriedade do proprietário do bot".
+			"cuja taxa de câmbio é igual ao dólar, "
+			"e são propriedade do proprietário do bot."
 			"A administração e o proprietário do bot não são responsáveis por "
-			"dinheiro doado, equilíbrio no sistema e pontos virtuais. O plano escolhido "
-			"pelo usuário pode ser cancelado e o saldo cancelado a qualquer momento sem "
-			"qualquer razão.\nDe qualquer forma, a administração entrará em contato e"
-			"resolverá disputas sempre que possível e dependendo da situação".
+			"dinheiro doado, equilíbrio no sistema e pontos virtuais. O plano escolhido"
+			" pelo usuário pode ser cancelado e o saldo cancelado a qualquer momento "
+			"sem qualquer razão.\nDe qualquer forma, a administração entrará em contato"
+			" e resolverá disputas sempre que possível e dependendo da situação."
 		},
 		"de": {
 			"ro_msg": "*" + emojiCodes.get('moneyWithWings') + " Einzahlung*\n\n"
@@ -2872,7 +2873,8 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": "O limite de notificações foi atingido dentro deste período "
-			"de assinatura.\nEspere por um novo período ou mude para um plano com um limite maior".
+			"de assinatura.\nEspere por um novo período ou mude para um plano com um "
+			"limite maior."
 		},
 		"de": {
 			"ro_msg": "Die maximale Anzahl an Benachrichtigungen für die aktuelle "
@@ -2907,7 +2909,8 @@ messages = {
 			"ro_msg": "A new user has registered using your link, your tariff improved!"
 		},
 		"pt-BR": {
-			"ro_msg": "Um novo usuário se cadastrou através do seu link, seu plano sofreu um upgrade!"
+			"ro_msg": "Um novo usuário se cadastrou através do seu link, seu plano "
+			"sofreu um upgrade!"
 		},
 		"de": {
 			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! Deine "
@@ -2960,8 +2963,8 @@ messages = {
 			"Current conditions:"
 		},
 		"pt-BR": {
-			"ro_msg": "Bem-vindo! Experimente o melhor plano como um bônus de boas-vindas! "
-			"Condições atuais:"
+			"ro_msg": "Bem-vindo! Experimente o melhor plano como um bônus de "
+			"boas-vindas! Condições atuais:"
 		}
 	},
 	"secret_award_welcome": {
@@ -2974,8 +2977,8 @@ messages = {
 			"a reward! Current conditions:"
 		},
 		"pt-BR": {
-			"ro_msg": "Bem-vindo! Você está de volta ao começo! Experimente o melhor plano como "
-			"uma recompensa! Condições atuais:"
+			"ro_msg": "Bem-vindo! Você está de volta ao começo! Experimente o melhor "
+			"plano como uma recompensa! Condições atuais:"
 		}
 	},
 	"donation": {
@@ -3214,8 +3217,8 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": emojiCodes.get('electricPlug') + "*Canais conectados*\n\n"
-			"Você pode adicionar um canal do Telegram, depois selecionar podcasts, e o bot "
-			"irá enviar automaticamente novos episódios para ele!\n\n"
+			"Você pode adicionar um canal do Telegram, depois selecionar podcasts, e o "
+			"bot irá enviar automaticamente novos episódios para ele!\n\n"
 			"Deixe o bot gerenciar o canal de podcast para você!"
 		}
 	},
@@ -3416,8 +3419,8 @@ messages = {
 			"Clique no podcast para que o bot comece a rastrear seus novos "
 			"lançamentos e enviá-los para o canal. Toque novamente para cancelar."
 			"Saiba quem se você cancelar a assinatura de um podcast abrindo-o, por"
-                        "exemplo, através do comando /subscriptions, a conexão dele com o canal "
-                        "do Telegram também desaparecerá.
+			"exemplo, através do comando /subscriptions, a conexão dele com o "
+			"canal do Telegram também desaparecerá."
 		}
 	},
 
@@ -3456,7 +3459,7 @@ routed_messages = {
 		},
 		"comedy": {
 			"ru": "Комедия",
-			"en": "Comedy"
+			"en": "Comedy",
 			"pt-BR": "Humor"
 		},
 		"education": {
@@ -3496,7 +3499,7 @@ routed_messages = {
 		},
 		"natural sciences": {
 			"ru": "Eстественные науки",
-			"en": "Natural sciences"
+			"en": "Natural sciences",
 			"pt-BR": "Ciências Naturais"
 		},
 		"news": {
