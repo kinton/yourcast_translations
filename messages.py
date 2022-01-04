@@ -113,6 +113,9 @@ messages = {
 		"en": {
 			"ro_msg": "or"
 		},
+		"pt-BR": {
+			"ro_msg": "ou"
+		},
 	},
 	"welcomeMessage": {
 		"ru": {
@@ -189,6 +192,9 @@ messages = {
 		"en": {
 			"ro_msg": "We also signed you up to [%s](t.me/%s?start=podcast_%s)"
 		},
+		"pt-BR": {
+			"ro_msg": "Também inscrevemos você em [%s](t.me/%s?start=podcast_%s)"
+		},
 	},
 	"dontForgetToVisitStart": {
 		"ru": {
@@ -197,6 +203,9 @@ messages = {
 		"en": {
 			"ro_msg": "Don't forget to visit the start page /start"
 		},
+		"pt-BR": {
+			"ro_msg": "Não se esqueça de visitar a página inicial em /start"
+		}
 	},
 	"pressMe": {
 		"ru": {
@@ -512,7 +521,7 @@ messages = {
 			"ro_msg": "There are"
 		},
 		"pt-BR": {
-			"ro_msg": "Encontrados"
+			"ro_msg": "Foram encontrados"
 		},
 		"es": {
 			"ro_msg": "Se encontraron"
@@ -705,6 +714,9 @@ messages = {
 		"en": {
 			"ro_msg": "The amount is too small"
 		},
+		"pt-BR": {
+			"ro_msg": "O montante é muito pequeno"
+		}
 	},
 	"notFoundOrFuture": {
 		"ru": {
@@ -715,6 +727,10 @@ messages = {
 			"ro_msg": "The record was not found (deleted or changed), "
 			"or you have reached the latest release."
 		},
+		"pt-BR": {
+			"ro_msg": "O registro não foi encontrado (excluído ou alterado), "
+			"ou você já chegou no lançamento mais recente."
+		}
 	},
 	"gettingStateError": {
 		"ru": {
@@ -724,7 +740,7 @@ messages = {
 			"ro_msg": "Error in getting your status, resetting..."
 		},
 		"pt-BR": {
-			"ro_msg": "Erro ao obter seu status, redefinir..."
+			"ro_msg": "Erro ao obter seu status, redefinindo..."
 		},
 		"es": {
 			"ro_msg": "Error al obtener su estado, restableciendo..."
@@ -765,7 +781,7 @@ messages = {
 			"ro_msg": "Your download will take some time"
 		},
 		"pt-BR": {
-			"ro_msg": "O download demora um pouco"
+			"ro_msg": "O download pode demorar um pouco"
 		},
 		"es": {
 			"ro_msg": "La descarga puede demorar un poco"
@@ -783,6 +799,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Update in progress, plese wait"
+		}
+		"pt-BR": {
+			"ro_msg": "Atualização em andamento, por favor aguarde"
 		}
 	},
 	"tooBigRecord": {
@@ -927,6 +946,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('electricPlug') + " " + "Connected channels"
 		}
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('electricPlug') + " " + "Canais conectados"
+		}
 	},
 	"add_by_rss": {
 		"ru": {
@@ -1069,6 +1091,9 @@ messages = {
 		"en": {
 			"ro_msg": "Next episode"
 		}
+		"pt-BR": {
+			"ro_msg": "Próximo episódio"
+		}
 
 	},
 	"settings": {
@@ -1100,7 +1125,7 @@ messages = {
 			"ro_msg": emojiCodes.get('gear') + "Global bot settings"
 		},
 		"pt-BR": {
-			"ro_msg": emojiCodes.get('gear') + "Configurações globais de bot"
+			"ro_msg": emojiCodes.get('gear') + "Configurações globais do bot"
 		},
 		"es": {
 			"ro_msg": emojiCodes.get('gear') + "Configuración global de bot"
@@ -1152,9 +1177,9 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": emojiCodes.get('gear') + "*Selecione taxa de bits*\n\n"
-			"Por exemplo, se a taxa de bits for"
+			"Por exemplo, se a taxa for"
 			" 64 kbit/s, uma gravação de 10 minutos levará cerca de 4,6 megabytes."
-			"\nAo mesmo tempo, se a taxa de bits for 2 vezes maior, o tamanho do"
+			"\nSendo assim, se a taxa de bits for 2 vezes maior, o tamanho do"
 			" arquivo dobrará.\nEste parâmetro afeta a qualidade da gravação.\n\n"
 			"Taxa de bits atual:"
 		},
@@ -1191,7 +1216,7 @@ messages = {
 			"ro_msg": "Don't change bitrate"
 		},
 		"pt-BR": {
-			"ro_msg": "Não mude a taxa de bits"
+			"ro_msg": "Não alterar a taxa de bits"
 		},
 		"es": {
 			"ro_msg": "No cambie la tasa de bits"
@@ -1252,6 +1277,10 @@ messages = {
 			"ro_msg": emojiCodes.get('crown') + " " + "Top podcasts" + \
 			" " + emojiCodes.get('globeEuropeAfrica')
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Top podcasts" + \
+			" " + emojiCodes.get('globeEuropeAfrica')
+		}
 	},
 	"podcastTopLang": {
 		"ru": {
@@ -1260,6 +1289,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('crown') + " " + "Local Top"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('crown') + " " + "Top local"
+		}
 	},
 	"generalTop": {
 		"ru": {
@@ -1267,6 +1299,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('generalTop') + " " + "Global top"
+		}
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('generalTop') + " " + "Top global"
 		}
 	},
 	"help": {
@@ -1321,7 +1356,7 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": "Além desse bot, existem outros projetos do desenvolvedor. "
-			"Por enquanto, você pode tentar o seguinte projeto:"
+			"Você pode experimentar o seguinte projeto, por enquanto:"
 		},
 		"es": {
 			"ro_msg": "Además de este bot, hay otros proyectos del desarrollador. "
@@ -1348,8 +1383,8 @@ messages = {
 			"\n\nPlease choose what you want to do:"
 		},
 		"pt-BR": {
-			"ro_msg": "*Atenção! O autor do bot não está relacionado a podcasts e "
-			"suas gravações de áudio e não é responsável por eles.*"
+			"ro_msg": "*Atenção! O autor do bot não tem vínculo com nenhum podcast e "
+			"suas gravaçõesm, e não é responsável por seu conteúdo ou publicação.*"
 			"\n\nPor favor, escolha uma das opções a seguir:"
 		},
 		"es": {
@@ -1456,6 +1491,9 @@ messages = {
 		"en": {
 			"ro_msg": "ProTip: send the page number to go to it"
 		},
+		"pt-BR": {
+			"ro_msg": "Dica: envie o número da página para ir diretamente a ela"
+		}
 	},
 	"loading": {
 		"ru": {
@@ -1559,6 +1597,11 @@ messages = {
 			"ro_msg": "*You have new episodes!*\n\n"
 			"Subscribe /subscribe to the bot or invite users to get audio records.\n"
 			"Your referral link:"
+		},
+		"pt-BR": {
+			"ro_msg": "*Você tem novos episódios!*\n\nInscreva-se no bot enviando /subscription"
+			" ou convide usuários para receber arquivos de áudio.\n"
+			"Seu link de convite:"
 		}
 	},
 	"youHaveNewEpisodesShort": {
@@ -1567,6 +1610,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "*You have new episodes!*"
+		},
+		"pt-BR": {
+			"ro_msg": "*Você tem novos episódios!*"
 		}
 	},
 	"noSubs": {
@@ -1601,9 +1647,9 @@ messages = {
 			" or upgrade to any tariff /subscription."
 		},
 		"pt-BR": {
-			"ro_msg": "Sem tarifa, o número de assinaturas é limitado. "
+			"ro_msg": "Sem um plano, o número de assinaturas é limitado. "
 			"Você agora atingiu o limite. Cancele a assinatura de outro podcast "
-			"ou atualize para qualquer tarifa /subscription."
+			"ou atualize para qualquer plano enviando /subscription."
 		},
 		"es": {
 			"ro_msg": "Sin tarifa, el número de suscripciones es limitado. "
@@ -1634,6 +1680,13 @@ messages = {
 			". Upgrade to any tariff /subscription\n\n"
 			"You can support this bot with a donation! /donate or"
 			" [Patreon.com](%s)" % donate_link
+		},
+		"pt-BR": {
+			"ro_msg": "Sem plano, o número de podcasts com atualização manual é "
+			"limitado a " + str(max_subscriptions_without_tariff) + \
+			". Atualize para qualquer plano usando /subscription\n\n"
+			"Você pode apoiar este bot com uma doação! Envie /donate ou"
+			"acesse [Patreon.com](%s)" % donate_link
 		}
 	},
 	"podcastDoesNotExist": {
@@ -1690,7 +1743,7 @@ messages = {
 		"pt-BR": {
 			"ro_msg": "Este bot permite pesquisar, escutar e assinar podcasts."
 			" Se você assinar um podcast,"
-			" o bot irá enviar novos episódios assim que forem lançado."
+			" o bot irá enviar novos episódios assim que forem lançados."
 		},
 		"es": {
 			"ro_msg": "Este bot le permite buscar, escuchar y suscribirse a podcasts."
@@ -1727,10 +1780,10 @@ messages = {
 			" definition was given by Evgeny Myatin)."
 		},
 		"pt-BR": {
-			"ro_msg": "O podcast (de iPod e broadcast) é o processo de criação e"
+			"ro_msg": "O termo 'podcast' veio da união das palavras 'iPod' e 'broadcast'. É o processo de criação e"
 			" distribuição de arquivos de áudio ou vídeo (os podcasts) no estilo de"
 			" transmissões de rádio e televisão na Internet. Como regra, os podcasts"
-			" têm um certo tema e frequência de publicação (essa definição foi dada"
+			" têm um certo tema e frequência de publicação (definição dada"
 			" por Evgeny Myatin)."
 		},
 		"es": {
@@ -1798,7 +1851,7 @@ messages = {
 		},
 		"pt-BR": {
 			"ro_msg": "Para encontrar novos podcasts, vá em /menu e toque em pesquisar."
-			" Em seguida, envie ao bot o nome ou parte do nome do podcast que você"
+			" Em seguida, envie o nome ou parte do nome do podcast que você"
 			" deseja encontrar. A navegação por páginas funciona em várias listas,"
 			" incluindo os resultados da pesquisa.\n\n"
 			"Para assinar um podcast, toque em \"Assinar\" para abrir o podcasts"
@@ -1948,6 +2001,9 @@ messages = {
 		},
 		"de": {
 			"ro_msg": "אתה מנוי כבר למסלול זה."
+		},
+		"pt-BR": {
+			"ro_msg": "Você já está inscrito neste plano."
 		}
 	},
 	"tariffActivatedNotEnoughMoney": {
@@ -1960,6 +2016,11 @@ messages = {
 			"ro_msg": "You have already subscribed to this tariff, but it has not"
 			" been activated. \nTo activate it, you need to add %s to your balance" + \
 			emojiCodes.get('dollar') + "(dollars)."
+		},
+		"pt-BR": {
+			"ro_msg": "Você já se inscreveu neste plano, mas ele não"
+			" foi ativado. \nPara ativá-lo, você precisa adicionar %s ao seu saldo" + \
+			emojiCodes.get('dollar') + "(dólares)."
 		},
 		"de": {
 			"ro_msg": "Du bist bereits in dieser Preisklasse, sie wurde aber noch nicht"
@@ -1983,6 +2044,11 @@ messages = {
 			"To fully activate it, you need to add %s to your balance" + \
 			emojiCodes.get('dollar') + "(dollars)."
 		},
+		"pt-BR": {
+			"ro_msg": "Fundos insuficientes para ativar o plano.\n"
+			"Para ativá-lo, você precisa adicionar %s ao seu saldo" + \
+			emojiCodes.get('dollar') + "(dólares)."
+		},
 		"de": {
 			"ro_msg": "Deine Mittel sind unzureichend, um diese Preisklasse "
 			"freizuschalten.\nUm sie vollständig zu aktivieren musst Du Deinen "
@@ -1995,6 +2061,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The tariff has been successfully applied!"
+		},
+		"pt-BR": {
+			"ro_msg": "O plano foi ativado com sucesso!"
 		},
 		"he": {
 			"ro_msg": "המסלול שלך אושר והתחיל בהצלחה!"
@@ -2009,6 +2078,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The tariff is not activated! To activate it, top up your balance"
+		},
+		"pt-BR": {
+			"ro_msg": "O plano não está ativo! Para ativá-lo, recarregue seu saldo"
 		},
 		"he": {
 			"ro_msg": "המסלול שלך לא הופעל! כדי להפעיל אותו - בדוק את היתרה שלך"
@@ -2025,6 +2097,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " " + "Subscription"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('creditCard') + " " + "Planos"
+		},
 		"he": {
 			"ro_msg": emojiCodes.get('creditCard') + " " + "מינויים"
 		},
@@ -2039,6 +2114,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('creditCard') + " Bot subscription"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('creditCard') + " Assinatura do bot"
+		},
 		"he": {
 			"ro_msg": emojiCodes.get('creditCard') + " מנויים לרובוט"
 		},
@@ -2052,6 +2130,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('moneyWithWings') + " Pay"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('moneyWithWings') + " Pagar"
 		}
 	},
 	"donate_page_body": {
@@ -2075,6 +2156,16 @@ messages = {
 			"and their exchange rate is equal to the US dollar, "
 			"while they belong to the bot owner, not to users."
 		},
+		"pt-BR": {
+			"ro_msg": "A assinatura permite que você acesse todos os recursos\n\n"
+			"Existem diversos planos. Confira cada um clicando no botão "
+			"\"Escolha um plano\".\n\n"
+			"*Atenção!  Qualquer inclusão de saldo é considerada "
+			"uma doação!* Dólares no saldo são como pontos virtuais "
+			"concedidos pelas doações. Eles não são considerados dinheiro, "
+			"e sua taxa de câmbio é igual ao dólar americano, "
+			"por pertencerem ao proprietário do bot, não aos usuários."
+		},
 		# "he": {
 		# 	"ro_msg": "מנוי מאפשר לך לגשת לכל התכונות של הבוט.\n"
 		# 	"ישנם מספר מסלולים. למידע נוסף והרשמה,"
@@ -2094,6 +2185,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Top up balance via Crypto Bot"
+		},
+		"pt-BR": {
+			"ro_msg": "Fazer uma recarga através do Crypto Bot"
 		}
 	},
 	"bot_sub_cryptobot_page_body": {
@@ -2106,6 +2200,11 @@ messages = {
 			"ro_msg": "Select the cryptocurrency that you have "
 			"on your Crypto Bot account\n\n"
 			"More details: @cryptobot"
+		},
+		"pt_BR": {
+			"ro_msg": "Selecione a criptomoeda que você tem "
+			"na sua conta do Crypto Bot\n\n"
+			"Para maiores detalhes, acesse @cryptobot"
 		}
 	},
 	"bot_sub_cryptobot_amount_input": {
@@ -2116,6 +2215,10 @@ messages = {
 		"en": {
 			"ro_msg": "Enter the value you want to top up your bot balance "
 			"in USD " + emojiCodes.get('dollar') + "(dollars)"
+		},
+		"pt-BR": {
+			"ro_msg": "Insira o valor que deseja recarregar o saldo do bot "
+			"em dólares " + emojiCodes.get('dollar') + "(dólares)"
 		}
 	},
 	"cryptobot_generated_link_page": {
@@ -2131,6 +2234,12 @@ messages = {
 			+ emojiCodes.get('dollar') + "(dollars) using "
 			"{assetAmount} {asset}\n\n"
 			"Exchange rate: 1 {asset} = {exchangeRateUSD}$ (dollars)"
+		},
+		"pt-BR": {
+			"ro_msg": "Você vai recarregar o saldo do bot em {summa}"
+			+ emojiCodes.get('dollar') + "(dólares) usando "
+			"{assetAmount} {asset}\n\n"
+			"Taxa de câmbio: 1 {asset} = {exchangeRateUSD}$ (dólares)"
 		}
 	},
 	"payViaPatreon": {
@@ -2161,6 +2270,16 @@ messages = {
 			+ "and donate the required amount."
 			"\n\nVerification for subscription will happen automatically, but you can "
 			"also click on the \"Check Patreon\" button to do it outside queue."
+		},
+		"pt-BR": {
+			"ro_msg": "Registre-se no Patreon.com para "
+			"ativar sua assinatura. Então, neste menu do bot, clique em "
+			"\"Informar e-mail do Patreon\" e envie ao bot o e-mail "
+			"usado para registro no Patreon. Então, acesse "
+			+ "[%s](%s) " % (donate_link, donate_link)
+			+ "e realiza a doação do montante necessário."
+			"\n\nA verificação da assinatura acontecerá automaticamente, mas você pode "
+			"também clicar em \"Validar Patreon\" para verificar manualmente."
 		}
 	},
 	"thisMonthHasAlreadyBeenReplenished": {
@@ -2169,6 +2288,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Balance has already been replenished this month"
+		},
+		"pt-BR": {
+			"ro_msg": "O saldo já foi recarregado este mês"
 		}
 	},
 	"noDataUpdatePatreon": {
@@ -2177,6 +2299,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "No new data, check your email and try again later"
+		},
+		"pt-BR": {
+			"ro_msg": "Sem novos dados, verifique seu e-mail e tente novamente mais tarde"
 		}
 	},
 	"balanceFromPatreonAdded": {
@@ -2190,6 +2315,11 @@ messages = {
 			"subscribing to Patreon! Select tariff using command /subscription. "
 			"Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "Você recebeu um crédito como agradecimento pela "
+			"inscrição no Patreon! Selecione o plano usando o comando /subscription. "
+			"Condições atuais:"
+		}
 	},
 	"tellPatreonEmail": {
 		"ru": {
@@ -2197,6 +2327,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('email') + " Specify Patreon Mail"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('email') + " Informar e-mail do Patreon"
 		}
 	},
 	"checkPatreonStatus": {
@@ -2205,6 +2338,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('inboxTray') + " Check Patreon"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('inboxTray') + " Validar Patreon"
 		}
 	},
 	"donate_page_email_input": {
@@ -2213,6 +2349,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('email') + " Send your email"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('email') + " Envie o e-mail"
 		}
 	},
 	"current_email": {
@@ -2221,6 +2360,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Current email"
+		},
+		"pt-BR": {
+			"ro_msg": "E-mail atual"
 		}
 	},
 	"email_saved": {
@@ -2229,6 +2371,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Email saved"
+		},
+		"pt-BR": {
+			"ro_msg": "E-mail salvo"
 		}
 	},
 	"save_error": {
@@ -2237,6 +2382,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Save error"
+		},
+		"pt-BR": {
+			"ro_msg": "Erro ao salvar"
 		}
 	},
 	"donate_page_referal": {
@@ -2259,6 +2407,16 @@ messages = {
 			" for minimum tariff. If a person refills the balance using your link, then"
 			" your tariff will be changed to the maximum, and its term will increase "
 			"by " + str(int(tariff_ref_sub_period / 24)) + " days."
+		},
+		"pt-BR": {
+			"ro_msg": "Traga amigos e ganhe bônus!  Se uma pessoa usar seu link de convite"
+			", você irá receber adicionar mais" + str(
+				int(tariff_ref_period / 24)) + " dias e " + str(tariff_ref_notifies) \
+			+ " notificações ao plano atual. Ou, caso não tenha uma assinatura, receberá" \
+			+ str(int(tariff_ref_no_subscription_period / 24)) + " dias de assinatura"
+			" do plano mínimo. Se uma pessoa fizer uma recarga usando seu link, então"
+			" você receberá o plano máximo, e seu prazo aumentará "
+			"em " + str(int(tariff_ref_sub_period / 24)) + " dias."
 		},
 		"he": {
 			"ro_msg": "הזמינו חברים וקבלו בונוסים! אם חבר שלך הצטרף ע\"י הקישור שלך"
@@ -2290,6 +2448,9 @@ messages = {
 		"en": {
 			"ro_msg": "Current tariff"
 		},
+		"pt-BR": {
+			"ro_msg": "Plano atual"
+		},
 		"he": {
 			"ro_msg": "מסלול נוכחי"
 		},
@@ -2305,6 +2466,10 @@ messages = {
 		"en": {
 			"ro_msg": "With the current conditions, you will not receive notifications "
 			"about new releases.\nMore details: /subscription"
+		},
+		"pt-BR": {
+			"ro_msg": "Nas condições atuais, você não receberá notificações "
+			"de novos lançamentos.\nMais detalhes em: /subscription"
 		},
 		"he": {
 			"ro_msg": "בתנאים הנוכחיים לא תקבל תהראות על פרקים "
@@ -2322,6 +2487,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('clipboard') + "Choose a tariff"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('clipboard') + "Escolha um plano"
 		},
 		"he": {
 			"ro_msg": emojiCodes.get('clipboard') + "בחר מסלול"
@@ -2359,6 +2527,21 @@ messages = {
 			" able to subscribe to more than " \
 			+ str(max_subscriptions_without_tariff) + " podcasts."
 		},
+		"pt-BR": {
+			"ro_msg": "*" + emojiCodes.get('clipboard') + " Planos*\n\n"
+			"Aqui você pode escolher um plano. Por favor, leia atentamente"
+			" as opções disponíveis e, a seguir, clique no botão do plano "
+			"escolhido.\n\nO plano somente será ativado quando você realizar uma recarga na conta."
+			"*Atenção! Qualquer recarga na conta será considerada uma doação!*"
+			"\n\nSe você decidir mudar para um plano mais caro, parte do "
+			"diferença entre os planos para os dias restantes será debitado "
+			"imediatamente.\n*Mas, se decidir mudar para um mais barato, o saldo "
+			"será aumentado pela metade do valor para os dias restantes, exceto "
+			"o dia atual!*\n\n"
+			"Além disso, se você não estiver inscrito em um plano, você não será"
+			" capaz de se inscrever em mais de " \
+			+ str(max_subscriptions_without_tariff) + " podcasts."
+		},
 		"de": {
 			"ro_msg": "*" + emojiCodes.get('clipboard') + " Preisklassen*\n\n"
 			"Hier kannst Du eine für Dich passende Preisklasse wählen. Lies Dir "
@@ -2383,6 +2566,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('bronze') + " Bronze"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('bronze') + " Bronze"
+		},
 		"de": {
 			"ro_msg": emojiCodes.get('bronze') + " Bronze"
 		}
@@ -2394,6 +2580,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('silver') + " Silver"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('silver') + " Prata"
+		},
 		"de": {
 			"ro_msg": emojiCodes.get('silver') + " Silber"
 		}
@@ -2404,6 +2593,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('gold') + " Gold"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('gold') + " Ouro"
 		},
 		"de": {
 			"ro_msg": emojiCodes.get('gold') + " Gold"
@@ -2422,6 +2614,12 @@ messages = {
 			# "Compression support: (not available at the moment) %s"
 			"Channel management: %s"
 		},
+		"pt-BR": {
+			"ro_msg": "Cost: %s" + emojiCodes.get('dollar') \
+			+ "(dólares) por 30 dias.\nNotificações (por um período de 30 dias): %s\n"
+			# "Suporte a compressão: (não disponível no momento) %s"
+			"Channel management: %s"
+		},
 		"de": {
 			"ro_msg": "Kosten: %s" + emojiCodes.get('dollar') \
 			+ "(in Dollar) für 30 Tage.\nBenachrichtigungen (über eine Laufzeit von 30"
@@ -2437,6 +2635,9 @@ messages = {
 		"en": {
 			"ro_msg": "Days left: %s"
 		},
+		"pt-BR": {
+			"ro_msg": "Dias restantes: %s"
+		},
 		"de": {
 			"ro_msg": "Verbleibende Tage: %s"
 		}
@@ -2447,6 +2648,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Notifications left: %s"
+		},
+		"pt-BR": {
+			"ro_msg": "Notificações restantes: %s"
 		},
 		"de": {
 			"ro_msg": "Verbleibende Benachrichtigungen: %s"
@@ -2459,6 +2663,9 @@ messages = {
 		"en": {
 			"ro_msg": "Current balance: %s" + emojiCodes.get('dollar')
 		},
+		"pt-BR": {
+			"ro_msg": "Saldo atual: %s" + emojiCodes.get('dollar')
+		},
 		"de": {
 			"ro_msg": "Kontostand: %s" + emojiCodes.get('dollar')
 		}
@@ -2469,6 +2676,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "(not enough for renewal: %s" + emojiCodes.get('dollar') + ")"
+		},
+		"pt-BR": {
+			"ro_msg": "(insuficiente para renovação: %s" + emojiCodes.get('dollar') + ")"
 		},
 		"de": {
 			"ro_msg": "(nicht genug für eine Erneuerung: %s" + \
@@ -2481,6 +2691,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": emojiCodes.get('moneyWithWings') + " Top up balance"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('moneyWithWings') + " Recarregar saldo"
 		},
 		"de": {
 			"ro_msg": emojiCodes.get('moneyWithWings') + " Konto aufladen"
@@ -2515,6 +2728,20 @@ messages = {
 			"giving any reason.\nAt the same time, the administration will contact and "
 			"resolve disputes whenever possible and depending on the situation."
 		},
+		"pt-BR": {
+			"ro_msg": "*" + emojiCodes.get('moneyWithWings') + " Recarga*\n\n"
+			"Aqui pode completar o seu saldo. Para um link pode clicar".
+			" no botão ou *enter o montante manualmente*.\n\n"
+			"*Atenção! O crédito de conta é também considerado uma doação!*"
+			" Os dólares no sistema são pontos virtuais atribuídos por doações, "
+			"cuja taxa de câmbio é igual ao dólar, ".
+			"e são propriedade do proprietário do bot".
+			"A administração e o proprietário do bot não são responsáveis por "
+			"dinheiro doado, equilíbrio no sistema e pontos virtuais. O plano escolhido "
+			"pelo usuário pode ser cancelado e o saldo cancelado a qualquer momento sem "
+			"qualquer razão.\nDe qualquer forma, a administração entrará em contato e"
+			"resolverá disputas sempre que possível e dependendo da situação".
+		},
 		"de": {
 			"ro_msg": "*" + emojiCodes.get('moneyWithWings') + " Einzahlung*\n\n"
 			"Hier kannst Du Dein Konto aufladen. Durch Drücken auf den Knopf "
@@ -2538,6 +2765,9 @@ messages = {
 		"en": {
 			"ro_msg": "Your payment has been credited!"
 		},
+		"pt-BR": {
+			"ro_msg": "Seu pagamento foi creditado!"
+		},
 		"de": {
 			"ro_msg": "Deine Zahlung wurde gutgeschrieben!"
 		}
@@ -2548,6 +2778,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Go to the tariffs page and select the one you want."
+		},
+		"pt-BR": {
+			"ro_msg": "Vá para a página de planos e selecione o que deseja."
 		},
 		"de": {
 			"ro_msg": "Gehe zur Preisklassen-Übersicht und wähle aus, welche Du "
@@ -2561,6 +2794,9 @@ messages = {
 		"en": {
 			"ro_msg": "You have sufficient funds to renew."
 		},
+		"pt-BR": {
+			"ro_msg": "Você tem fundos suficientes para renovar."
+		},
 		"de": {
 			"ro_msg": "Du hast ausreichende Mittel zur Erneuerung."
 		}
@@ -2571,6 +2807,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "You do not have enough funds to renew."
+		},
+		"pt-BR": {
+			"ro_msg": "Você não tem fundos suficientes para renovar."
 		},
 		"de": {
 			"ro_msg": "Du hast unzureichende Mittel um Dein Abonnement zu erneuern."
@@ -2583,6 +2822,9 @@ messages = {
 		"en": {
 			"ro_msg": "The current tariff has been extended."
 		},
+		"pt-BR": {
+			"ro_msg": "O plano atual foi estendido."
+		},
 		"de": {
 			"ro_msg": "Das aktuelle Preisklassen-Abonnement wurde verlängert."
 		}
@@ -2593,6 +2835,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Your tariff has been extended! Current conditions:"
+		},
+		"pt-BR": {
+			"ro_msg": "Seu plano foi prorrogado!  Condições atuais:"
 		},
 		"de": {
 			"ro_msg": "Dein Abonnement wurde verlängert! Aktuelle Konditionen:"
@@ -2607,6 +2852,10 @@ messages = {
 			"ro_msg": "The tariff has expired, top up the balance. "
 			"Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "O plano expirou, complete o saldo. "
+			"Condições atuais:"
+		},
 		"de": {
 			"ro_msg": "Die Preisklasse ist ausgelaufen. Lade Dein Konto auf! "
 			"Aktuelle Konditionen:"
@@ -2620,6 +2869,10 @@ messages = {
 		"en": {
 			"ro_msg": "The notification limit has been reached within this expiration "
 			"date.\nWait for a new deadline or switch to a tariff with a higher limit."
+		},
+		"pt-BR": {
+			"ro_msg": "O limite de notificações foi atingido dentro deste período "
+			"de assinatura.\nEspere por um novo período ou mude para um plano com um limite maior".
 		},
 		"de": {
 			"ro_msg": "Die maximale Anzahl an Benachrichtigungen für die aktuelle "
@@ -2636,6 +2889,10 @@ messages = {
 			"ro_msg": "A new user has registered on your link, you were "
 			"subscribed to the tariff! Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "Um novo usuário se cadastrou no seu link, você ganhou "
+			"uma incrição! Condições atuais:"
+		},
 		"de": {
 			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! "
 			"Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
@@ -2648,6 +2905,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "A new user has registered using your link, your tariff improved!"
+		},
+		"pt-BR": {
+			"ro_msg": "Um novo usuário se cadastrou através do seu link, seu plano sofreu um upgrade!"
 		},
 		"de": {
 			"ro_msg": "Ein neuer Nutzer hat sich mit Deinem Link registriert! Deine "
@@ -2663,6 +2923,10 @@ messages = {
 			"ro_msg": "The invited user has replenished the balance for the first time,"
 			" you were subscribed to the tariff! Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "Um usuário que você convidou fez uma recarga pela primeira vez,"
+			" você ganhou um plano!  Condições atuais:"
+		},
 		"de": {
 			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand "
 			"aufgeladen! Du hast ein Abonnement erhalten! Aktuelle Konditionen:"
@@ -2676,6 +2940,10 @@ messages = {
 		"en": {
 			"ro_msg": "The invited user has replenished the balance for the first time,"
 			" your tariff improved! Current conditions:"
+		},
+		"pt-BR": {
+			"ro_msg": "Um usuário que você convidou fez uma recarga pela primeira vez,"
+			" seu plano sofreu um upgrade! Condições atuais:"
 		},
 		"de": {
 			"ro_msg": "Ein eingeladener Nutzer hat erstmals seinen Kontostand "
@@ -2691,6 +2959,10 @@ messages = {
 			"ro_msg": "Welcome! Try the best tariff as a welcome bonus! "
 			"Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "Bem-vindo! Experimente o melhor plano como um bônus de boas-vindas! "
+			"Condições atuais:"
+		}
 	},
 	"secret_award_welcome": {
 		"ru": {
@@ -2701,6 +2973,10 @@ messages = {
 			"ro_msg": "Welcome! You are back to the beginning! Try the best tariff as "
 			"a reward! Current conditions:"
 		},
+		"pt-BR": {
+			"ro_msg": "Bem-vindo! Você está de volta ao começo! Experimente o melhor plano como "
+			"uma recompensa! Condições atuais:"
+		}
 	},
 	"donation": {
 		"ru": {
@@ -2745,8 +3021,8 @@ messages = {
 			"Faça uma doação em [Patreon.com](%s)" % donate_link
 			# "Faça uma doação em [Patreon.com](%s)" % donate_link + \
 			# "\n\nOu por favor, envie o valor em rublos. Você pode descobrir a taxa de "
-			# "câmbio do dólar americano neste link:"
-			# " https: //investing.com/currencies/usd-rub"
+			# "câmbio neste link:"
+			# " https://br.investing.com/currencies/brl-rub"
 			+ "\n\nEle também fornecerá opções adicionais, saiba mais: /subscription"
 		},
 		"es": {
@@ -2792,6 +3068,10 @@ messages = {
 		"en": {
 			"ro_msg": "[Open the podcast](t.me/{botName}?start=podcast_{id}) "
 			"with @{botName}"
+		},
+		"pt-BR": {
+			"ro_msg": "[Abra o podcast](t.me/{botName}?start=podcast_{id}) "
+			"com @{botName}"
 		}
 	},
 	"linkInTheBotByPodcastId_HTML": {
@@ -2804,6 +3084,11 @@ messages = {
 			"ro_msg":
 			"<a href=\"t.me/{botName}?start=podcast_{id}\">Open the podcast</a> "
 			"with @{botName}"
+		},
+		"pt-bR": {
+			"ro_msg":
+			"<a href=\"t.me/{botName}?start=podcast_{id}\">Abra o podcast</a> "
+			"com @{botName}"
 		}
 	},
 	"notANumber": {
@@ -2818,7 +3103,7 @@ messages = {
 		"pt-BR": {
 			"ro_msg": "Por favor, insira a quantidade em rublos."
 			" Você pode descobrir a taxa de câmbio para o dólar americano neste link:"
-			" https://investing.com/currencies/usd-rub."
+			" https://br.investing.com/currencies/brl-rub."
 		},
 		"es": {
 			"ro_msg": "Por favor, entre la cantidad en rublos."
@@ -2898,6 +3183,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('crown') + "\nChoose genre"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('crown') + "\nEscolha o gênero"
+		}
 	},
 	"topMessage": {
 		"ru": {
@@ -2906,6 +3194,9 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('crown') + "\nТоп жанра"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('crown') + "\nTop gêneros"
+		}
 	},
 
 	"connectTgChannelMessage": {
@@ -2921,6 +3212,12 @@ messages = {
 			"automatically send new episodes to it!\n\n"
 			"Let the bot manage the podcast channel for you!"
 		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('electricPlug') + "*Canais conectados*\n\n"
+			"Você pode adicionar um canal do Telegram, depois selecionar podcasts, e o bot "
+			"irá enviar automaticamente novos episódios para ele!\n\n"
+			"Deixe o bot gerenciar o canal de podcast para você!"
+		}
 	},
 	"cantConnectTgChannelMessage": {
 		"ru": {
@@ -2930,6 +3227,10 @@ messages = {
 		"en": {
 			"ro_msg": "*To add a channel, your tariff must be level %s.*\n"
 			"Your current tariff: %s.\n\nMore info: /subscription"
+		},
+		"pt-BR": {
+			"ro_msg": "*Para adicionar um canal, seu plano deve ser nível %s.*\n"
+			"Seu plano atual: %s.\n\nMais informações em /subscription"
 		}
 	},
 	"myTgChannels": {
@@ -2938,6 +3239,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "My channels"
+		},
+		"pt-BR": {
+			"ro_msg": "Meus canais"
 		}
 	},
 	"addTgChannel": {
@@ -2946,6 +3250,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Add channel"
+		},
+		"pt-BR": {
+			"ro_msg": "Adicionar canal"
 		}
 	},
 	"addTgChannelInput": {
@@ -2958,6 +3265,11 @@ messages = {
 			"ro_msg": "Make this bot the administrator of your channel. "
 			"Then enter the channel id, it starts with a minus, or send "
 			"the bot any channel message"
+		},
+		"pt-BR": {
+			"ro_msg": "Torne este bot o administrador do seu canal. "
+			"Em seguida, insira o id do canal, ele começa com um símbolo de menos '-', "
+			"ou encaminhe qualquer mensagem do canal para este bot"
 		}
 	},
 	"tgChannelNotFoundEnsureBotAdmin": {
@@ -2968,6 +3280,10 @@ messages = {
 		"en": {
 			"ro_msg": "Channel not found. "
 			"Make sure you have added the bot as an administrator"
+		},
+		"pt-BR": {
+			"ro_msg": "Canal não encontrardo. "
+			"Certifique-se de ter adicionado o bot como administrador"
 		}
 	},
 	"tgChannelNotFoundEnsureBotAdminWithName": {
@@ -2980,6 +3296,11 @@ messages = {
 			"ro_msg": "Channel *%s* not found. "
 			"Make sure you have added the bot as an administrator.\n\n"
 			"More info: /my\\_tg\\_channels"
+		},
+		"pt-BR": {
+			"ro_msg": "Canal *%s* não encontrado. "
+			"Certifique-se de ter adicionado o bot como administrador.\n\n"
+			"Mais informações em: /my\\_tg\\_channels"
 		}
 	},
 	"tgChannelAlreadyAdded": {
@@ -2988,6 +3309,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The channel already added"
+		},
+		"pt-BR": {
+			"ro_msg": "Este canal já foi adicionado"
 		}
 	},
 	"tgChannelAdded": {
@@ -2996,6 +3320,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The channel has been successfully added"
+		},
+		"pt-BR": {
+			"ro_msg": "O canal foi adicionado com sucesso"
 		}
 	},
 	"yourTgChannelList": {
@@ -3006,6 +3333,10 @@ messages = {
 		"en": {
 			"ro_msg": emojiCodes.get('electricPlug') + "\n"
 			"List of channels you have added"
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"Lista de canais que você adicionou"
 		}
 	},
 	"yourTgChannel": {
@@ -3014,6 +3345,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Manage the added channel"
+		},
+		"pt-BR": {
+			"ro_msg": "Gerenciar o canal adicionado"
 		}
 	},
 	"tgChannelStatus": {
@@ -3021,6 +3355,9 @@ messages = {
 			"ro_msg": "Состояние"
 		},
 		"en": {
+			"ro_msg": "Status"
+		},
+		"pt-BR": {
 			"ro_msg": "Status"
 		}
 	},
@@ -3030,6 +3367,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Podcasts"
+		},
+		"pt-BR": {
+			"ro_msg": "Podcasts"
 		}
 	},
 	"tgChannelDelete": {
@@ -3038,6 +3378,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Delete channel"
+		},
+		"pt-BR": {
+			"ro_msg": "Apagar canal"
 		}
 	},
 	"tapAgainToDeleteTgChannel": {
@@ -3046,6 +3389,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "Press again to confirm deletion"
+		},
+		"pt-BR": {
+			"ro_msg": "Pressione novamente para confirmar a exclusão"
 		}
 	},
 	"yourTgChannelSubList": {
@@ -3064,6 +3410,14 @@ messages = {
 			"Note that if you unsubscribe from a podcast by opening it, for "
 			"example via the command /subscriptions, its connection to the Telegram "
 			"channel will also disappear."
+		},
+		"pt-BR": {
+			"ro_msg": emojiCodes.get('electricPlug') + "\n"
+			"Clique no podcast para que o bot comece a rastrear seus novos "
+			"lançamentos e enviá-los para o canal. Toque novamente para cancelar."
+			"Saiba quem se você cancelar a assinatura de um podcast abrindo-o, por"
+                        "exemplo, através do comando /subscriptions, a conexão dele com o canal "
+                        "do Telegram também desaparecerá.
 		}
 	},
 
@@ -3073,6 +3427,9 @@ messages = {
 		},
 		"en": {
 			"ro_msg": "The bot is undergoing maintenance! Please, wait for a while."
+		},
+		"pt-BR": {
+			"ro_msg": "O bot está em manutenção! Aguarde um pouco."
 		},
 		"de": {
 			"ro_msg": "Der Bot ist aufgrund von Wartungsarbeiten nicht erreichbar!"
@@ -3089,95 +3446,118 @@ routed_messages = {
 	"genres": {
 		"arts": {
 			"ru": "Искусства",
-			"en": "Arts"
+			"en": "Arts",
+			"pt-BR": "Artes"
 		},
 		"business": {
 			"ru": "Бизнес",
-			"en": "Business"
+			"en": "Business",
+			"pt-BR": "Negócios"
 		},
 		"comedy": {
 			"ru": "Комедия",
 			"en": "Comedy"
+			"pt-BR": "Humor"
 		},
 		"education": {
 			"ru": "Образование",
-			"en": "Education"
+			"en": "Education",
+			"pt-BR": "Educação"
 		},
 		"health & fitness": {
 			"ru": "Здоровье и фитнес",
-			"en": "Health & fitness"
+			"en": "Health & fitness",
+			"pt-BR": "Saúde e bem-estar"
 		},
 		"investing": {
 			"ru": "Инвестиции",
-			"en": "Investing"
+			"en": "Investing",
+			"pt-BR": "Investimento e economia"
 		},
 		"language learning": {
 			"ru": "Изучение языков",
-			"en": "Language learning,"
+			"en": "Language learning",
+			"pt-BR": "Idiomas"
 		},
 		"leisure": {
 			"ru": "Досуг",
-			"en": "Leisure"
+			"en": "Leisure",
+			"pt-BR": "Lazer"
 		},
 		"life sciences": {
 			"ru": "Естественные науки",
-			"en": "Life sciences"
+			"en": "Life sciences",
+			"pt-BR": "Ciências Humanas"
 		},
 		"mental health": {
-			"ru": "Mental health",
-			"en": "Душевное здоровье"
+			"en": "Mental health",
+			"ru": "Душевное здоровье",
+			"pt-BR": "Saúde Mental"
 		},
 		"natural sciences": {
 			"ru": "Eстественные науки",
 			"en": "Natural sciences"
+			"pt-BR": "Ciências Naturais"
 		},
 		"news": {
 			"ru": "Новости",
-			"en": "News"
+			"en": "News",
+			"pt-BR": "Notícias"
 		},
 		"medicine": {
 			"ru": "Медицина",
-			"en": "Medicine"
+			"en": "Medicine",
+			"pt-BR": "Medicina"
 		},
 		"politics": {
 			"ru": "Политика",
-			"en": "Politics"
+			"en": "Politics",
+			"pt-BR": "Política"
 		},
 		"religion & spirituality": {
 			"ru": "Религия и духовность",
-			"en": "Religion & spirituality"
+			"en": "Religion & spirituality",
+			"pt-BR": "Religião e espiritualidade"
 		},
 		"running": {
 			"ru": "Бег",
-			"en": "Running"
+			"en": "Running",
+			"pt-BR": "Corrida"
 		},
 		"science": {
 			"ru": "Наука",
-			"en": "Science"
+			"en": "Science",
+			"pt-BR": "Ciência"
 		},
 		"self-improvement": {
 			"ru": "Самосовершенствование",
-			"en": "Self-improvement"
+			"en": "Self-improvement",
+			"pt-BR": "Motivação e Auto-ajuda"
 		},
 		"society & culture": {
 			"ru": "Общество и культура",
-			"en": "Society & culture"
+			"en": "Society & culture",
+			"pt-BR": "Sociedade e cultura"
 		},
 		"sports": {
 			"ru": "Спорт",
-			"en": "Sports"
+			"en": "Sports",
+			"pt-BR": "Esportes"
 		},
 		"tech news": {
 			"ru": "Технические новости",
-			"en": "Tech news"
+			"en": "Tech news",
+			"pt-BR": "Notícias de tecnologia"
 		},
 		"technology": {
 			"ru": "Технологии",
-			"en": "Technology"
+			"en": "Technology",
+			"pt-BR": "Tecnologia"
 		},
 		"true crime": {
 			"ru": "Настоящее преступление",
-			"en": "True crime"
+			"en": "True crime",
+			"pt-BR": "Crimes reais"
 		},
 	}
 }
